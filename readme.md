@@ -1,135 +1,158 @@
-?? Portfólio React
+ï»¿# ğŸ“‚ PortfÃ³lio React
 
-Este é um projeto de portfólio desenvolvido em React, com foco em acessibilidade, design responsivo e usabilidade. O projeto foi estruturado utilizando diversas tecnologias modernas, como Storybook, Radix UI e React Skeleton, proporcionando uma experiência de usuário intuitiva e dinâmica.
+Este Ã© um projeto de portfÃ³lio desenvolvido em **React**, com foco em acessibilidade, design responsivo e usabilidade. O projeto foi estruturado utilizando diversas tecnologias modernas, como **Storybook**, **Radix UI** e **React Skeleton**, proporcionando uma experiÃªncia de usuÃ¡rio intuitiva e dinÃ¢mica.
 
-??? Tecnologias Utilizadas
+---
 
-Frontend
+## ğŸš°ï¸ Tecnologias Utilizadas
 
-React: Biblioteca JavaScript para construção de interfaces de usuário.
+### **Frontend**
 
-Storybook: Ferramenta para documentar e testar componentes em isolamento.
+- **React**: Biblioteca JavaScript para construÃ§Ã£o de interfaces de usuÃ¡rio.
+- **Storybook**: Ferramenta para documentar e testar componentes em isolamento.
+- **Radix UI**: Componentes acessÃ­veis e personalizÃ¡veis para React.
+- **React Skeleton**: AnimaÃ§Ãµes de carregamento para placeholders (efeito "esqueleto").
+- **Sass/CSS**: Para estilizaÃ§Ã£o com suporte a variÃ¡veis e mixins.
 
-Radix UI: Componentes acessíveis e personalizáveis para React.
+### **Ferramentas e ConfiguraÃ§Ãµes**
 
-React Skeleton: Animações de carregamento para placeholders (efeito "esqueleto").
+- **Isotope.js**: Biblioteca para layouts dinÃ¢micos e filtrÃ¡veis.
+- **Formik & Yup**: Gerenciamento de formulÃ¡rios e validaÃ§Ã£o de dados.
+- **React Spinners**: Indicadores de carregamento personalizados.
+- **Node.js**: Plataforma para executar cÃ³digo JavaScript no backend.
+- **NPM**: Gerenciador de pacotes utilizado para dependÃªncias.
 
-Sass/CSS: Para estilização com suporte a variáveis e mixins.
+---
 
-Ferramentas e Configurações
+## ğŸš€ Funcionalidades
 
-Isotope.js: Biblioteca para layouts dinâmicos e filtráveis.
+### PortfÃ³lio
 
-Formik & Yup: Gerenciamento de formulários e validação de dados.
+- VisualizaÃ§Ã£o de projetos com categorias filtrÃ¡veis.
+- Modal de exibiÃ§Ã£o ampliada para imagens dos projetos.
 
-React Spinners: Indicadores de carregamento personalizados.
+### Acessibilidade
 
-Node.js: Plataforma para executar código JavaScript no backend.
+- ImplementaÃ§Ã£o com **Radix UI** para melhorar a experiÃªncia para usuÃ¡rios de leitores de tela.
+- Skeleton loaders para suavizar o carregamento de conteÃºdo.
 
-NPM: Gerenciador de pacotes utilizado para dependências.
+### FormulÃ¡rio de Contato
 
-?? Funcionalidades
+- ValidaÃ§Ã£o com **Formik** e **Yup**.
+- Feedback visual durante o envio de mensagens.
 
-Portfólio
+### Storybook
 
-Visualização de projetos com categorias filtráveis.
+- DocumentaÃ§Ã£o e visualizaÃ§Ã£o interativa de componentes.
 
-Modal de exibição ampliada para imagens dos projetos.
+---
 
-Acessibilidade
+## ğŸ“¦ Estrutura de Pastas
 
-Implementação com Radix UI para melhorar a experiência para usuários de leitores de tela.
-
-Skeleton loaders para suavizar o carregamento de conteúdo.
-
-Formulário de Contato
-
-Validação com Formik e Yup.
-
-Feedback visual durante o envio de mensagens.
-
-Storybook
-
-Documentação e visualização interativa de componentes.
-
-?? Estrutura de Pastas
-
+```plaintext
 src/
-??? assets/          # Imagens e fontes
-??? components/      # Componentes reutilizáveis
-?   ??? Header/
-?   ??? Footer/
-?   ??? Main/
-?   ??? Portfolio/
-?   ??? Sobre/
-?   ??? Formulario/
-?   ??? Especialidades/
-??? styles/          # Estilização global e variáveis
-??? .storybook/      # Configurações do Storybook
-??? App.js           # Arquivo principal do React
+â”œâ”€â”€ assets/          # Imagens e fontes
+â”œâ”€â”€ components/      # Componentes reutilizÃ¡veis
+â”‚   â”œâ”€â”€ Header/
+â”‚   â”œâ”€â”€ Footer/
+â”‚   â”œâ”€â”€ Main/
+â”‚   â”œâ”€â”€ Portfolio/
+â”‚   â”œâ”€â”€ Sobre/
+â”‚   â”œâ”€â”€ Formulario/
+â”‚   â””â”€â”€ Especialidades/
+â”œâ”€â”€ styles/          # EstilizaÃ§Ã£o global e variÃ¡veis
+â”œâ”€â”€ .storybook/      # ConfiguraÃ§Ãµes do Storybook
+â””â”€â”€ App.js           # Arquivo principal do React
+```
 
-??? Pré-requisitos
+---
 
-Node.js: Versão 18 ou superior.
+## ğŸ–¥ï¸ PrÃ©-requisitos
 
-NPM: Gerenciador de pacotes (instalado com o Node.js).
+- **Node.js**: VersÃ£o 18 ou superior.
+- **NPM**: Gerenciador de pacotes (instalado com o Node.js).
 
-?? Instalação
+---
 
-Clone o repositório:
+## âš™ï¸ InstalaÃ§Ã£o
 
-git clone https://github.com/JVMPRDEV/portifolio-react.git
-cd portifolio-react
+1. **Clone o repositÃ³rio**:
 
-Instale as dependências:
+   ```bash
+   git clone https://github.com/JVMPRDEV/portifolio-react.git
+   cd portifolio-react
+   ```
 
-npm install
+2. **Instale as dependÃªncias**:
 
-Inicie o projeto:
+   ```bash
+   npm install
+   ```
 
-npm start
+3. **Inicie o projeto**:
 
-Acesse no navegador:
+   ```bash
+   npm start
+   ```
 
-http://localhost:3000
+4. **Acesse no navegador**:
 
-?? Documentação com Storybook
+   ```
+   http://localhost:3000
+   ```
 
-Inicie o Storybook:
+---
 
-npm run storybook
+## ğŸ”“ DocumentaÃ§Ã£o com Storybook
 
-Acesse a interface do Storybook:
+1. **Inicie o Storybook**:
 
-http://localhost:6006
+   ```bash
+   npm run storybook
+   ```
 
-?? Contribuindo
+2. **Acesse a interface do Storybook**:
 
-Faça um fork deste repositório.
+   ```
+   http://localhost:6006
+   ```
 
-Crie uma branch para suas alterações:
+---
 
-git checkout -b minha-nova-feature
+## ğŸ§¹ Contribuindo
 
-Faça o commit:
+1. **FaÃ§a um fork deste repositÃ³rio**.
+2. **Crie uma branch para suas alteraÃ§Ãµes**:
+   ```bash
+   git checkout -b minha-nova-feature
+   ```
+3. **FaÃ§a o commit**:z
+   ```bash
+   git commit -m "Adiciona nova feature"
+   ```
+4. **Envie para sua branch remota**:
+   ```bash
+   git push origin minha-nova-feature
+   ```
+5. **Abra um Pull Request no repositÃ³rio original**.
 
-git commit -m "Adiciona nova feature"
+---
 
-Envie para sua branch remota:
-
-git push origin minha-nova-feature
-
-Abra um Pull Request no repositório original.
-
-?? Demonstração
+## ğŸ¨ DemonstraÃ§Ã£o
 
 Adicione aqui uma imagem ou GIF que mostre a funcionalidade do projeto.
 
-?? Licença
+---
 
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+## ğŸ“„ LicenÃ§a
 
-????? Autor
+Este projeto estÃ¡ sob a licenÃ§a **MIT**. Veja o arquivo `LICENSE` para mais detalhes.
 
-Desenvolvido com ?? por João Rocha.
+---
+
+## ğŸ‘¨â€ğŸ’» Autor
+
+Desenvolvido com ğŸ’» por **JoÃ£o Rocha**.
+
+---
 
