@@ -1,0 +1,129 @@
+@import '../../styles/variables.css';
+
+/* Footer */
+footer {
+    padding-block: 1rem;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    box-shadow: 0 0 10px 1px var(--color-card-shadow);
+    font-size: 0.875rem;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Footer container */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-inline: 1rem;
+}
+
+/* Logo */
+.logo-footer img {
+    max-width: 100px;
+    height: auto;
+    transition: transform 0.5s ease, max-width 0.5s ease;
+}
+
+    .logo-footer img:hover {
+        transform: scale(1.1); /* Leve aumento ao passar o mouse */
+    }
+
+/* Direitos reservados */
+.rights-footer {
+    text-align: center;
+    font-size: 0.85rem;
+    transition: font-size 0.5s ease, color 0.5s ease;
+}
+
+    .rights-footer:hover {
+        color: var(--color-highlight); /* Destaca o texto */
+    }
+
+/* Redes sociais */
+.social-footer {
+    display: flex;
+    gap: 1rem;
+}
+
+    .social-footer a {
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--color-highlight);
+        color: var(--color-text-dark);
+        border-radius: 50%;
+        text-decoration: none;
+        font-size: 1.2rem;
+        transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.5s ease, color 0.5s ease;
+    }
+
+        .social-footer a:hover {
+            transform: scale(1.2); /* Aumento mais perceptível */
+            box-shadow: 0 0 15px var(--color-highlight); /* Sombra mais destacada */
+            background-color: var(--color-button-bg); /* Alteração da cor de fundo no hover */
+        }
+
+            .social-footer a:hover i {
+                color: var(--color-footer-social-icon-hover); /* Cor do ícone no hover */
+                transition: color 0.5s ease;
+            }
+
+/* Skeleton Loader */
+.footer-skeleton-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-inline: 1rem;
+    gap: 1.5rem;
+}
+
+.skeleton {
+    background: linear-gradient( 90deg, var(--color-skeleton-bg) 25%, var(--color-skeleton-highlight) 50%, var(--color-skeleton-bg) 75% );
+    background-size: 200% 100%;
+    border-radius: 8px;
+    animation: shimmer 1.5s infinite;
+}
+
+/* Skeleton para logo */
+.skeleton-logo {
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+/* Skeleton para texto */
+.skeleton-line {
+    width: 200px;
+    height: 1rem;
+}
+
+/* Skeleton para grupo de redes sociais */
+.skeleton-social-group {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Skeleton círculo para ícones sociais */
+.skeleton-circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+/* Efeito de brilho do skeleton */
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
+}

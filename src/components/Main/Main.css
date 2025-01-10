@@ -1,0 +1,97 @@
+@import '../../styles/variables.css';
+
+.section--principal {
+    padding-block: 5rem;
+    padding-inline: 2rem;
+    max-width: 1280px;
+    overflow: hidden;
+    margin: auto;
+    background-color: var(--color-background);
+    color: var(--color-text-dark);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.section--left,
+.section--rigth {
+    flex: 1;
+}
+
+.section--title {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--color-title);
+}
+
+    .section--title span {
+        color: var(--color-title-highlight);
+    }
+
+.section--description {
+    font-size: 0.9rem;
+    padding-block: 1.3rem;
+    font-weight: 300;
+    color: var(--color-description);
+    text-align: justify;
+}
+
+.section--left {
+    padding-left: 1.8rem;
+}
+
+.section--rigth img {
+    animation: flutuar 2s ease-in-out infinite alternate;
+    margin-left: 10rem;
+    max-width: 350px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    border-radius: 0;
+}
+
+/* Hexagonal Placeholder */
+.skeleton-hexagon {
+    width: 350px;
+    height: 350px;
+    margin-left: 10rem;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-color: var(--color-card-bg);
+}
+
+/* Título Placeholder */
+.skeleton-title {
+    width: 60%;
+    height: 40px;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+/* Descrição Placeholder */
+.skeleton-description {
+    width: 80%;
+    height: 20px;
+    margin-bottom: 0.8rem;
+    border-radius: 5px;
+}
+
+/* Botão Placeholder */
+.skeleton-button {
+    width: 150px;
+    height: 40px;
+    margin-top: 1rem;
+    border-radius: 20px;
+}
+
+/* Animação de flutuar */
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}

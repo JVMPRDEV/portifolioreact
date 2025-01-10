@@ -1,0 +1,109 @@
+@import '../../styles/variables.css';
+
+/* Container do Formulário */
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--color-background);
+}
+
+/* Caixa do formulário */
+.form-box {
+    background-color: var(--color-background);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--color-card-shadow);
+    max-width: 500px;
+    width: 100%;
+    padding: 2rem;
+    text-align: left;
+}
+
+/* Título */
+.form-title-port {
+    text-align: center;
+    font-size: 2.65rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+    .form-title-port span {
+        color: var(--color-highlight);
+    }
+
+/* Campos de entrada */
+.form-field {
+    position: relative;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 1.2rem;
+    background-color: var(--color-input-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    color: var(--color-input-text);
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+    .form-input:focus,
+    .form-textarea:focus {
+        border-color: var(--color-highlight);
+        box-shadow: 0 0 8px var(--color-highlight-shadow);
+    }
+
+.form-textarea {
+    resize: none;
+    height: 120px;
+}
+
+/* Placeholder */
+::placeholder {
+    color: var(--color-placeholder);
+    font-size: 0.9rem;
+}
+
+/* Mensagens de erro */
+.form-error {
+    color: var(--color-error-text);
+    font-size: 0.875rem;
+    margin-top: 0.3rem;
+}
+
+/* Botão de envio */
+.btn-enviar {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.form-button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--color-button-bg);
+    color: var(--color-button-text);
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+    .form-button:hover {
+        background-color: var(--color-highlight);
+        box-shadow: 0 0 8px var(--color-highlight);
+        transform: scale(1.02);
+    }
+
+/* Skeleton Loader */
+.skeleton {
+    background: linear-gradient( 90deg, var(--color-skeleton-bg) 25%, var(--color-skeleton-highlight) 50%, var(--color-skeleton-bg) 75% );
+    background-size: 200% 100%;
+    border-radius: 8px;
+    animation: shimmer 1.5s infinite;
+}

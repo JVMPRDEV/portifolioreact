@@ -1,0 +1,53 @@
+/* Tutorial Overlay */
+.tutorial-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro com opacidade */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+
+/* Tutorial Modal */
+.tutorial-modal {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px var(--color-box-shadow-footer);
+    max-width: 400px;
+    width: 90%;
+}
+
+    .tutorial-modal h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        color: var(--color-highlight);
+    }
+
+    .tutorial-modal p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+/* Botão do Tutorial */
+.tutorial-btn {
+    padding: 0.8rem 1.5rem;
+    background-color: var(--color-highlight);
+    color: var(--color-button-text);
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+    .tutorial-btn:hover {
+        background-color: var(--color-button-bg);
+        transform: scale(1.05);
+    }

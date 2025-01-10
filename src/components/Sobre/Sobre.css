@@ -1,0 +1,148 @@
+@import '../../styles/variables.css';
+
+/* Container dos cards */
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+/* Card individual */
+.team-card {
+    background-color: var(--color-card-bg);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px var(--color-card-shadow);
+    overflow: hidden;
+    max-width: 320px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    height: 360px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, height 0.4s ease;
+}
+
+    .team-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px var(--color-card-shadow-hover);
+        height: 440px;
+    }
+
+/* Nome */
+.team-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-card-text);
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+}
+
+.team-card:hover .team-name {
+    color: var(--color-highlight);
+}
+
+/* Imagem */
+.img-sobre img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .img-sobre img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 8px var(--color-highlight);
+        cursor: pointer;
+    }
+
+/* Descrição */
+.sobre--description {
+    font-size: 0.9rem;
+    color: var(--color-card-description);
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/* Redes sociais */
+.btn-social {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.team-card:hover .btn-social {
+    opacity: 1;
+    visibility: visible;
+}
+
+.btn-social a {
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-social-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .btn-social a:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 12px var(--color-social-shadow);
+    }
+
+.btn-social i {
+    font-size: 20px;
+    color: var(--color-social-icon);
+    transition: color 0.2s ease;
+}
+
+.btn-social a:hover i {
+    color: var(--color-social-icon-hover);
+}
+
+/* Skeleton Loader */
+.skeleton-card {
+    background-color: var(--color-card-bg);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px var(--color-card-shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 360px;
+    padding: 1rem;
+    text-align: center;
+    transition: height 0.4s ease;
+}
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.loading-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-card-text);
+}
+
+.loading-description {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: var(--color-card-description);
+    text-align: center;
+}

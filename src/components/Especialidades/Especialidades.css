@@ -1,0 +1,156 @@
+@import '../../styles/variables.css';
+
+/* Geral da seção */
+.especialidades {
+    margin: auto;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+/* Container dos slides */
+.swiper-wrapper {
+    display: flex;
+    align-items: stretch; /* Alinha os slides na mesma altura */
+}
+
+/* Estilo dos slides */
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Garante que os elementos internos tenham a mesma altura */
+    height: auto; /* Adapta o tamanho ao conteúdo maior */
+    margin: 2rem 0;
+}
+
+/* Estilo das especialidades */
+.especialidades--box {
+    flex: 1; /* Faz com que todos os cards ocupem o mesmo tamanho */
+    padding: 60px;
+    width: 70%;
+    aspect-ratio: 1 / 1; /* Garante proporção quadrada */
+    border-radius: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: var(--color-card-bg);
+    color: var(--color-card-text);
+    text-align: center;
+    box-shadow: 0 4px 8px var(--color-card-shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+    .especialidades--box:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 12px var(--color-highlight-shadow);
+    }
+
+    /* Título */
+    .especialidades--box h3 {
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: var(--color-card-text);
+        margin: 1rem 0;
+    }
+
+    /* Descrição */
+    .especialidades--box p {
+        font-size: 0.9rem;
+        font-weight: 300;
+        color: var(--color-card-description);
+        margin: 0 auto;
+    }
+
+/* Ícones */
+.especialidade-icon {
+    font-size: 3rem;
+    color: var(--color-highlight);
+    margin-bottom: 1rem;
+}
+
+/* Swiper Container */
+.swiper-container {
+    width: 90%;
+    max-width: 1280px;
+    margin: auto;
+    padding: 2rem 0;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Swiper Pagination */
+.swiper-pagination {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 10;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: var(--color-overlay-text) !important;
+    border: 2px solid var(--color-highlight);
+    border-radius: 50%;
+    opacity: 1;
+    margin: 0 5px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--color-highlight) !important;
+    border-color: var(--color-highlight);
+    transform: scale(1.2);
+}
+
+.skeleton-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin: 2rem auto;
+    max-width: 1280px;
+}
+
+.skeleton-box {
+    flex: 1;
+    padding: 60px;
+    border-radius: 20px;
+    background-color: var(--color-card-bg);
+    box-shadow: 0 4px 8px var(--color-card-shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    aspect-ratio: 1 / 1;
+    text-align: center;
+    position: relative;
+}
+
+.skeleton-spinner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+    .skeleton-spinner-container h3 {
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: var(--color-card-text);
+    }
+
+    .skeleton-spinner-container p {
+        font-size: 0.9rem;
+        font-weight: 300;
+        color: var(--color-card-description);
+        text-align: center;
+    }

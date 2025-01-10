@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\assets",
+    "\\src\\assets\\img",
+    "\\src\\components",
+    "\\src\\components\\Footer",
+    "\\src\\components\\Formulario",
+    "\\src\\components\\Header",
+    "\\src\\components\\Main",
+    "\\src\\components\\Portfolio",
+    "\\src\\styles"
+  ],
+  "SelectedNode": "\\src\\components\\Main\\Main.css",
+  "PreviewInSolutionExplorer": false
+}

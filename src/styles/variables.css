@@ -1,0 +1,93 @@
+:root {
+    /* Cores Gerais */
+    --color-highlight: #FFA500; /* Laranja */
+    --color-text: #333333; /* Texto padrão */
+    --color-background: #FFFFFF; /* Fundo padrão */
+    --color-text-dark: #f3f3f3; /* Texto claro */
+    --color-description: #666666; /* Cor da descrição */
+    --color-title: #333333; /* Cor do título principal */
+    --color-title-highlight: #FFAA33; /* Cor de destaque do título */
+    --color-highlight-shadow: rgba(255, 140, 0, 0.6); /* Sombra destacada */
+    --color-modal-background: rgba(255, 255, 255, 0.8); /* Fundo do modal no modo claro */
+    /* Botões */
+    --color-button-bg: #FFAA33; /* Fundo do botão */
+    --color-button-text: #000000; /* Texto do botão */
+    --color-button-shadow: #FFAA33; /* Sombra do botão */
+    /* Inputs */
+    --color-input-bg: rgba(31, 31, 31, 0.3); /* Fundo dos inputs */
+    --color-input-text: #f3f3f3; /* Texto nos inputs */
+    /* Links */
+    --color-link: #5a5858; /* Cor padrão dos links */
+    --color-link-hover: #f3f3f3; /* Cor dos links no hover */
+    /* Headers */
+    --color-header-bg: #FFFFFF; /* Fundo do header */
+    /* Sombras */
+    --color-box-shadow: rgba(243, 243, 243, 0.35); /* Sombra geral */
+    --color-box-shadow-footer: rgba(243, 243, 243, 0.05); /* Sombra do footer */
+    --color-image-shadow: rgba(0, 0, 0, 0.2); /* Sombra das imagens */
+    /* Cards */
+    --color-card-bg: #ffffff; /* Fundo dos cards */
+    --color-card-shadow: rgba(0, 0, 0, 0.2); /* Sombra dos cards */
+    --color-card-shadow-hover: rgba(0, 0, 0, 0.3); /* Sombra no hover dos cards */
+    --color-card-text: #333333; /* Texto dos cards */
+    --color-card-text-hover: #FFAA33; /* Texto no hover dos cards */
+    --color-card-description: #666666; /* Texto de descrição dos cards */
+    /* Social */
+    --color-social-bg: #FFAA33; /* Fundo dos botões sociais */
+    --color-social-icon: #ffffff; /* Ícones sociais */
+    --color-social-icon-hover: #121212; /* Ícones sociais no hover */
+    --color-footer-social-icon-hover: #121212; /* Ícones sociais no hover */
+    --color-social-shadow: #FFAA33; /* Sombra dos botões sociais */
+    /* Overlay */
+    --color-overlay-background: rgba(0, 0, 0, 0.7); /* Fundo da sobreposição */
+    --color-overlay-text: #ffffff; /* Texto na sobreposição */
+    /* Outros */
+    --color-background-dark: rgba(31, 31, 31, 0.3); /* Fundo escuro */
+    --color-overlay-dark: rgba(0, 0, 0, 0.7); /* Sobreposição escura */
+}
+
+[data-theme="dark"] {
+    /* Cores Gerais */
+    --color-background: #121212; /* Cor de fundo no modo escuro */
+    --color-text: #ffffff; /* Texto principal no modo escuro */
+    --color-description: #cccccc; /* Cor da descrição no modo escuro */
+    --color-title: #f3f3f3; /* Cor do título no modo escuro */
+    --color-title-highlight: #FFAA33; /* Cor de destaque do título no modo escuro */
+    --color-highlight-shadow: rgba(255, 140, 0, 0.8); /* Sombra destacada no modo escuro */
+    --color-modal-background: rgba(0, 0, 0, 0.8); /* Fundo do modal no modo escuro */
+    /* Botões */
+    --color-button-bg: #FFAA33; /* Fundo do botão no modo escuro */
+    --color-button-text: #000000; /* Texto do botão no modo escuro */
+    --color-button-shadow: #FFAA33; /* Sombra do botão no modo escuro */
+    /* Inputs */
+    --color-input-bg: rgba(255, 255, 255, 0.1); /* Fundo dos inputs no modo escuro */
+    --color-input-text: #ffffff; /* Texto nos inputs no modo escuro */
+    /* Links */
+    --color-link: #cccccc; /* Cor padrão dos links no modo escuro */
+    --color-link-hover: #ffffff; /* Cor dos links no hover no modo escuro */
+    /* Headers */
+    --color-header-bg: #121212; /* Fundo do header no modo escuro */
+    /* Sombras */
+    --color-box-shadow: rgba(255, 255, 255, 0.35); /* Sombra geral no modo escuro */
+    --color-box-shadow-footer: rgba(255, 255, 255, 0.05); /* Sombra do footer no modo escuro */
+    --color-image-shadow: rgba(255, 255, 255, 0.1); /* Sombra das imagens no modo escuro */
+    /* Cards */
+    --color-card-bg: #1a1a1a; /* Fundo dos cards no modo escuro */
+    --color-card-shadow: rgba(0, 0, 0, 0.4); /* Sombra dos cards no modo escuro */
+    --color-card-shadow-hover: rgba(0, 0, 0, 0.6); /* Sombra no hover dos cards no modo escuro */
+    --color-card-text: #cccccc; /* Texto dos cards no modo escuro */
+    --color-card-text-hover: #FFAA33; /* Texto no hover dos cards no modo escuro */
+    --color-card-description: #999999; /* Texto de descrição dos cards no modo escuro */
+    /* Social */
+    --color-social-bg: #FFAA33; /* Fundo dos botões sociais no modo escuro */
+    --color-social-icon: #000000; /* Ícones sociais no modo escuro */
+    --color-social-icon-hover: #ffffff; /* Ícones sociais no hover no modo escuro */
+    --color-footer-social-icon-hover: #121212; /* Ícones sociais no hover no modo escuro */
+    --color-social-shadow: #FFAA33; /* Sombra dos botões sociais no modo escuro */
+    /* Overlay */
+    --color-overlay-background: rgba(255, 255, 255, 0.1); /* Fundo da sobreposição no modo escuro */
+    --color-overlay-text: #ffffff; /* Texto na sobreposição no modo escuro */
+    /* Outros */
+    --color-background-dark: rgba(31, 31, 31, 0.5); /* Fundo ajustado no modo escuro */
+    --color-overlay-dark: rgba(0, 0, 0, 0.5); /* Sobreposição no modo escuro */
+}

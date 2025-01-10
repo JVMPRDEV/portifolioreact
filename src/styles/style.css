@@ -1,0 +1,136 @@
+@import './variables.css';
+
+/* Reset Universal */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: calc(1em + 0.5rem);
+    font: inherit;
+}
+
+/* Corpo e Tipografia */
+body {
+    min-height: 100vh;
+    background-color: var(--color-background);
+    font-family: "Poppins", sans-serif;
+    color: var(--color-text);
+    padding-top: 60px;
+}
+
+/* Elementos Multimídia */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* Container Centralizado */
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-inline: 1rem;
+}
+
+/* Flex Container */
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Destaques */
+.highlight {
+    color: var(--color-highlight);
+}
+
+.overlay {
+    background-color: var(--color-overlay-background); /* Mantido */
+    color: var(--color-overlay-text); /* Mantido */
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+ 
+    .overlay:hover {
+        opacity: 1;
+    }
+
+.section-spacing {
+    margin-block: 8rem; /* Adiciona espaçamento vertical */
+}
+
+/* Modal container */
+.modal {
+    display: flex; /* O modal é visível por padrão */
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+}
+
+    .modal.hidden {
+        display: none; /* Esconde o modal quando a classe 'hidden' é adicionada */
+    }
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: var(--color-button-text);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-highlight);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1), transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+    .close-modal:hover {
+        transform: scale(1.1);
+        background-color: var(--color-highlight-shadow);
+    }
+
+.logo img {
+    transition: transform 0.5s ease; /* Suaviza a transformação ao longo de 0.5s */
+}
+
+    .logo img:hover {
+        transform: scale(1.05); /* Leve aumento ao passar o mouse */
+    }
+
+html {
+    scroll-behavior: smooth;
+}

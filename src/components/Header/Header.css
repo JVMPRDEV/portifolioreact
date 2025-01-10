@@ -1,0 +1,155 @@
+/* HEADER GERAL */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--color-header-bg);
+    box-shadow: 0 4px 8px var(--color-box-shadow-footer);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+    header .interface {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+/* MENU DESKTOP */
+.menu-desktop {
+    display: flex;
+}
+
+    .menu-desktop ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 40px;
+    }
+
+    .menu-desktop li {
+        display: inline;
+    }
+
+/* Links do menu com animações */
+.menu-link {
+    color: var(--color-link);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+    .menu-link::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background: var(--color-highlight);
+        transition: width 0.3s ease;
+    }
+
+    .menu-link:hover::before {
+        width: 100%; /* Efeito underline no hover */
+    }
+
+    .menu-link:hover {
+        color: var(--color-highlight);
+        transform: scale(1.05); /* Leve aumento */
+    }
+
+/* Botão de Contato e Troca de Tema */
+.header-btn-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Botão de Contato */
+.btn-contato button {
+    padding: 0.6rem 2.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--color-highlight);
+    color: var(--color-button-text);
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+    .btn-contato button:hover {
+        transform: scale(1.1); /* Leve aumento no hover */
+        box-shadow: 0 0 10px var(--color-highlight);
+    }
+
+/* Botão de troca de tema */
+.theme-switcher-btn {
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-highlight);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: var(--color-text);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+    .theme-switcher-btn:hover {
+        transform: rotate(180deg); /* Efeito de rotação */
+        background-color: var(--color-button-bg);
+        box-shadow: 0 0 10px var(--color-highlight);
+    }
+
+/* Mobile Menu Styles */
+.sidebar {
+    display: none; /* Escondido por padrão */
+}
+
+/* Radix Accessibility Styles */
+[data-state="open"] .menu-link {
+    background-color: var(--color-highlight);
+    color: var(--color-text-dark);
+}
+
+/* Skeleton Loader */
+.skeleton-logo {
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: var(--color-skeleton-bg);
+}
+
+.skeleton-menu {
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: var(--color-skeleton-bg);
+    margin: 0 15px;
+}
+
+.skeleton-button {
+    height: 40px;
+    width: 120px;
+    border-radius: 30px;
+    background-color: var(--color-skeleton-bg);
+}
+
+.skeleton-theme {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: var(--color-skeleton-bg);
+}

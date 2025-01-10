@@ -1,0 +1,137 @@
+@import '../../styles/variables.css';
+
+/* Geral */
+.portfolio {
+    padding: 0 3rem;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.title--port {
+    text-align: center;
+    font-size: 2.65rem;
+    margin-top: 4rem;
+    font-weight: 600;
+}
+
+    .title--port span {
+        color: var(--color-highlight);
+    }
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+    .filters button {
+        padding: 10px 20px;
+        background-color: var(--color-button-bg);
+        border: none;
+        color: var(--color-button-text);
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+        .filters button.active {
+            background-color: var(--color-highlight);
+            color: var(--color-text-dark);
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px var(--color-highlight-shadow);
+        }
+
+        .filters button:hover {
+            background-color: var(--color-highlight-shadow);
+            box-shadow: 0 2px 4px var(--color-box-shadow);
+        }
+
+/* Skeleton Loader */
+.skeleton-card {
+    width: calc(30% - 30px);
+    height: 400px;
+    margin: 15px;
+    background-color: var(--color-card-bg);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px var(--color-image-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.skeleton-filter {
+    margin: 0.5rem;
+    border-radius: 8px;
+    background-color: var(--color-skeleton-bg);
+    animation: shimmer 1.5s infinite linear;
+}
+
+/* Container dos elementos de carregamento */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+    /* Spinner */
+    .loading-container .ClipLoader {
+        margin-bottom: 10px;
+    }
+
+/* Texto "Carregando..." */
+.loading-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-card-text);
+}
+
+/* Mensagem adicional */
+.loading-description {
+    font-size: 0.9rem;
+    color: var(--color-card-description);
+    font-weight: 300;
+}
+
+/* Grid */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Imagem do portfólio */
+.img-port {
+    width: calc(33.333% - 30px);
+    height: 400px;
+    margin: 15px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px var(--color-image-shadow);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+    .img-port:hover {
+        transform: scale(1.05);
+        transition: background-position 1s ease, transform 0.3s ease;
+        background-position: center bottom;
+    }
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+}
