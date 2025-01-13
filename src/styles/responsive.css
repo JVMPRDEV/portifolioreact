@@ -21,44 +21,11 @@
     .section-spacing {
         margin-block: 2rem; /* Reduz o espaçamento em telas pequenas */
     }
-
-    .footer-container {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .logo-footer img {
-        max-width: 80px;
-    }
-
-    .rights-footer {
-        font-size: 0.75rem;
-    }
-
-    .social-footer a {
-        width: 30px;
-        height: 30px;
-        font-size: 1rem;
-    }
 }
 
 @media screen and (max-width: 450px) {
 
     .flex {
         flex-direction: column;
-    }
-
-    .logo-footer img {
-        max-width: 60px;
-    }
-
-    .rights-footer {
-        font-size: 0.65rem;
-    }
-
-    .social-footer a {
-        width: 25px;
-        height: 25px;
-        font-size: 0.9rem;
     }
 }
