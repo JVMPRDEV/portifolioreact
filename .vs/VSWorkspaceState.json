@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\assets",
-    "\\src\\assets\\img",
     "\\src\\components",
+    "\\src\\components\\Especialidades",
     "\\src\\components\\Footer",
     "\\src\\components\\Formulario",
     "\\src\\components\\Header",
@@ -12,6 +11,6 @@
     "\\src\\components\\Portfolio",
     "\\src\\styles"
   ],
-  "SelectedNode": "\\src\\App.js",
+  "SelectedNode": "\\src\\components\\Portfolio\\Portfolio.jsx",
   "PreviewInSolutionExplorer": false
 }

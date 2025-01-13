@@ -12,24 +12,24 @@
 /* Container dos slides */
 .swiper-wrapper {
     display: flex;
-    align-items: stretch; /* Alinha os slides na mesma altura */
+    align-items: stretch;
 }
 
 /* Estilo dos slides */
 .swiper-slide {
     display: flex;
     justify-content: center;
-    align-items: stretch; /* Garante que os elementos internos tenham a mesma altura */
-    height: auto; /* Adapta o tamanho ao conteúdo maior */
+    align-items: stretch;
+    height: auto;
     margin: 2rem 0;
 }
 
 /* Estilo das especialidades */
 .especialidades--box {
-    flex: 1; /* Faz com que todos os cards ocupem o mesmo tamanho */
+    flex: 1;
     padding: 60px;
     width: 70%;
-    aspect-ratio: 1 / 1; /* Garante proporção quadrada */
+    aspect-ratio: 1 / 1;
     border-radius: 20px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     background-color: var(--color-card-bg);
@@ -49,7 +49,6 @@
         box-shadow: 0 0 12px var(--color-highlight-shadow);
     }
 
-    /* Título */
     .especialidades--box h3 {
         font-size: 1.6rem;
         font-weight: 600;
@@ -57,7 +56,6 @@
         margin: 1rem 0;
     }
 
-    /* Descrição */
     .especialidades--box p {
         font-size: 0.9rem;
         font-weight: 300;
@@ -154,3 +152,25 @@
         color: var(--color-card-description);
         text-align: center;
     }
+
+/* Responsividade para Especialidades */
+@media screen and (max-width: 1020px) {
+    .title--especialidades {
+        font-size: 2rem;
+        line-height: 1;
+    }
+
+    .especialidades {
+        padding: 4rem 9%;
+    }
+
+    .img-port {
+        width: calc(50% - 20px); /* 2 itens por linha */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .img-port {
+        width: calc(100% - 20px); /* 1 item por linha */
+    }
+}

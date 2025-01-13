@@ -27,20 +27,6 @@
         .section--principal .section--rigth img {
             margin: auto;
         }
-
-    /* Especialidades */
-    .title--especialidades {
-        font-size: 2rem;
-        line-height: 1;
-    }
-
-    .especialidades {
-        padding: 4rem 9%;
-    }
-
-    .img-port {
-        width: calc(50% - 20px); /* 2 itens por linha */
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -50,10 +36,6 @@
         display: flex;
         justify-content: center; /* Centraliza horizontalmente */
         padding-top: 1rem; /* Espaço entre a logo e o menu */
-    }
-
-    .img-port {
-        width: calc(100% - 20px); /* 1 item por linha */
     }
 
     .section-spacing {
@@ -107,16 +89,6 @@
         .section--principal .section--rigth img {
             margin: auto;
         }
-
-    /* Especialidades */
-    .title--especialidades {
-        font-size: 2rem;
-        line-height: 1;
-    }
-
-    .especialidades {
-        padding: 4rem 9%;
-    }
 
     .logo-footer img {
         max-width: 60px;
