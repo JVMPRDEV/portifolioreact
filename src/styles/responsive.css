@@ -1,33 +1,12 @@
 @import './variables.css';
 
 @media screen and (max-width: 1020px) {
-
     /* Geral */
     .flex {
-        flex-direction: column;
+        flex-direction: column; /* Empilha os elementos em coluna */
+        align-items: center; /* Centraliza os elementos */
+        gap: 2rem; /* Espaçamento entre os elementos */
     }
-
-    /* Seção Principal */
-    .section--principal {
-        padding: 2rem 8%;
-    }
-
-        .section--principal .flex {
-            flex-direction: column-reverse;
-            gap: 1.5rem;
-        }
-
-        .section--principal .section--left {
-            padding-inline: 0;
-        }
-
-            .section--principal .section--left .section--title {
-                font-size: 1.7rem;
-            }
-
-        .section--principal .section--rigth img {
-            margin: auto;
-        }
 }
 
 @media screen and (max-width: 768px) {
@@ -68,28 +47,6 @@
     .flex {
         flex-direction: column;
     }
-
-    /* Seção Principal */
-    .section--principal {
-        padding: 2rem 8%;
-    }
-
-        .section--principal .flex {
-            flex-direction: column-reverse;
-            gap: 1.5rem;
-        }
-
-        .section--principal .section--left {
-            padding-inline: 0;
-        }
-
-            .section--principal .section--left .section--title {
-                font-size: 1.7rem;
-            }
-
-        .section--principal .section--rigth img {
-            margin: auto;
-        }
 
     .logo-footer img {
         max-width: 60px;
