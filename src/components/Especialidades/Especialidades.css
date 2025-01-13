@@ -42,6 +42,7 @@
     align-items: center;
     margin: 1rem;
     cursor: pointer;
+    border: 1px solid var(--color-border); /* Mantendo as bordas */
 }
 
     .especialidades--box:hover {
@@ -108,7 +109,8 @@
     transform: scale(1.2);
 }
 
-.skeleton-container {
+/* Skeleton Container */
+.skeleton-especialidades-container {
     display: flex;
     justify-content: space-around;
     gap: 1rem;
@@ -116,7 +118,7 @@
     max-width: 1280px;
 }
 
-.skeleton-box {
+.skeleton-especialidades-box {
     flex: 1;
     padding: 60px;
     border-radius: 20px;
@@ -130,28 +132,30 @@
     aspect-ratio: 1 / 1;
     text-align: center;
     position: relative;
+    border: 1px solid var(--color-border); /* Borda adicionada */
 }
 
-.skeleton-spinner-container {
+/* Skeleton Spinner */
+.skeleton-especialidades-spinner {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    margin-bottom: 1rem;
 }
 
-    .skeleton-spinner-container h3 {
-        font-size: 1.6rem;
-        font-weight: 600;
-        color: var(--color-card-text);
-    }
+.skeleton-especialidades-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--color-card-text);
+    margin: 1rem 0;
+}
 
-    .skeleton-spinner-container p {
-        font-size: 0.9rem;
-        font-weight: 300;
-        color: var(--color-card-description);
-        text-align: center;
-    }
+.skeleton-especialidades-description {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: var(--color-card-description);
+    text-align: center;
+}
 
 /* Responsividade para Especialidades */
 @media screen and (max-width: 1020px) {
@@ -164,8 +168,22 @@
         padding: 4rem 9%;
     }
 
-    .img-port {
-        width: calc(50% - 20px); /* 2 itens por linha */
+    .skeleton-especialidades-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .skeleton-especialidades-box {
+        width: 80%;
+    }
+
+    .skeleton-especialidades-title {
+        font-size: 1.4rem;
+    }
+
+    .skeleton-especialidades-description {
+        font-size: 0.8rem;
     }
 }
 
@@ -179,7 +197,15 @@
         padding: 4rem 9%;
     }
 
-    .img-port {
-        width: calc(100% - 20px); /* 1 item por linha */
+    .skeleton-especialidades-box {
+        width: 90%;
+    }
+
+    .skeleton-especialidades-title {
+        font-size: 1.2rem;
+    }
+
+    .skeleton-especialidades-description {
+        font-size: 0.75rem;
     }
 }

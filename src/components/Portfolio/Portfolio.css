@@ -51,7 +51,7 @@
 
 /* Skeleton Loader */
 .skeleton-card {
-    width: calc(30% - 30px);
+    width: calc(30% - 30px); /* Por padrão, 3 colunas */
     height: 400px;
     margin: 15px;
     background-color: var(--color-card-bg);
@@ -149,13 +149,29 @@
 
 /* Estilo Responsivo */
 @media screen and (max-width: 768px) {
+    .skeleton-card {
+        width: calc(50% - 30px); /* Ajusta para 2 colunas em dispositivos móveis */
+        height: 300px; /* Ajusta a altura para proporções menores */
+    }
+
+    .grid {
+        gap: 20px; /* Aumenta o espaçamento para melhorar a legibilidade */
+    }
+
     .img-port {
         width: calc(50% - 30px); /* Ajusta para 2 colunas em dispositivos móveis */
+        height: 300px; /* Ajusta a altura para imagens menores */
     }
 }
 
 @media screen and (max-width: 480px) {
     .img-port {
         width: calc(100% - 30px); /* Ajusta para 1 coluna em telas muito pequenas */
+        height: 250px; /* Reduz ainda mais a altura */
+    }
+
+    .skeleton-card {
+        width: calc(100% - 30px); /* Uma coluna no Skeleton para telas menores */
+        height: 250px;
     }
 }

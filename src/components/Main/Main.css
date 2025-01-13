@@ -75,7 +75,7 @@
         }
 
 /* Hexagonal Placeholder */
-.skeleton-hexagon {
+.main-skeleton-hexagon {
     width: 350px;
     height: 350px;
     margin-left: 10rem;
@@ -84,7 +84,7 @@
 }
 
 /* Título Placeholder */
-.skeleton-title {
+.main-skeleton-title {
     width: 60%;
     height: 40px;
     margin-bottom: 1rem;
@@ -92,7 +92,7 @@
 }
 
 /* Descrição Placeholder */
-.skeleton-description {
+.main-skeleton-description {
     width: 80%;
     height: 20px;
     margin-bottom: 0.8rem;
@@ -100,7 +100,7 @@
 }
 
 /* Botão Placeholder */
-.skeleton-button {
+.main-skeleton-button {
     width: 150px;
     height: 40px;
     margin-top: 1rem;
@@ -115,5 +115,35 @@
 
     100% {
         top: 30px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .flex {
+        flex-direction: column; /* Empilha os elementos em coluna */
+        align-items: center; /* Centraliza os elementos */
+        gap: 2rem; /* Espaçamento entre os elementos */
+    }
+
+    .section--rigth {
+        display: flex;
+        justify-content: center; /* Centraliza o hexágono horizontalmente */
+        align-items: center; /* Centraliza o hexágono verticalmente */
+    }
+
+    .main-skeleton-hexagon {
+        width: 250px; /* Reduz o tamanho do hexágono */
+        height: 250px;
+        margin: 0 auto; /* Garante o centro horizontal */
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    }
+
+    .section--rigth img {
+        margin: 0 auto; /* Centraliza a imagem se estiver carregada */
+    }
+
+    .section--left {
+        padding: 0;
+        text-align: center; /* Centraliza o texto */
     }
 }

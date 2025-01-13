@@ -31,12 +31,22 @@ const Portfolio = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
+    // Atualiza o estado de carregamento
     useEffect(() => {
         const timeout = setTimeout(() => setIsLoading(false), 2000);
         return () => clearTimeout(timeout);
     }, []);
 
+    // Atualiza a largura da tela dinamicamente
+    useEffect(() => {
+        const handleResize = () => setScreenWidth(window.innerWidth);
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    // Inicializa e gerencia o Isotope para filtros
     useEffect(() => {
         if (!isLoading) {
             const iso = new Isotope(".grid", {
@@ -66,16 +76,39 @@ const Portfolio = () => {
         }
     }, [isLoading]);
 
+    // Abre o modal com a imagem selecionada
     const openModal = (imageUrl) => {
         setSelectedImage(imageUrl);
         setIsModalOpen(true);
-        document.body.classList.add("no-interaction"); // Bloqueia interações no fundo
+        document.body.classList.add("no-interaction");
     };
 
+    // Fecha o modal
     const closeModal = () => {
         setIsModalOpen(false);
         setSelectedImage(null);
-        document.body.classList.remove("no-interaction"); // Restaura interações
+        document.body.classList.remove("no-interaction");
+    };
+
+    // Função para renderizar Skeleton
+    const renderSkeletonGrid = () => {
+        const columns = screenWidth <= 768 ? 2 : 3; // 2 colunas no celular, 3 no desktop
+        const rows = 3; // Sempre 3 linhas
+        const totalSkeletons = columns * rows;
+
+        return (
+            <div className="grid" id="portfolio-grid">
+                {Array.from({ length: totalSkeletons }).map((_, index) => (
+                    <div key={index} className="skeleton-card">
+                        <div className="loading-container">
+                            <ClipLoader color="#FFAA33" size={40} />
+                            <p className="loading-text">Carregando...</p>
+                            <p className="loading-description">Por favor, aguarde.</p>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        );
     };
 
     return (
@@ -94,6 +127,7 @@ const Portfolio = () => {
                                 className="skeleton-filter"
                                 height={40}
                                 width={100}
+                                style={{ borderRadius: "8px" }}
                             />
                         ))
                         : filtros.map((filtro, index) => (
@@ -107,19 +141,10 @@ const Portfolio = () => {
                         ))}
                 </div>
 
-                {/* Projetos ou Carregamento */}
-                <div className="grid" id="portfolio-grid">
-                    {isLoading
-                        ? Array.from({ length: 6 }).map((_, index) => (
-                            <div key={index} className="skeleton-card">
-                                <div className="loading-container">
-                                    <ClipLoader color="#FFAA33" size={40} />
-                                    <p className="loading-text">Carregando...</p>
-                                    <p className="loading-description">Por favor, aguarde.</p>
-                                </div>
-                            </div>
-                        ))
-                        : projetos.map((projeto, index) => (
+                {/* Projetos ou Skeleton */}
+                {isLoading ? renderSkeletonGrid() : (
+                    <div className="grid" id="portfolio-grid">
+                        {projetos.map((projeto, index) => (
                             <div
                                 key={index}
                                 className={`img-port ${projeto.categoria}`}
@@ -129,7 +154,8 @@ const Portfolio = () => {
                                 <div className="overlay">{projeto.titulo}</div>
                             </div>
                         ))}
-                </div>
+                    </div>
+                )}
             </section>
 
             {/* Modal */}

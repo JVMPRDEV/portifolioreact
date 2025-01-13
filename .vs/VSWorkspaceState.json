@@ -3,14 +3,14 @@
     "",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\Especialidades",
-    "\\src\\components\\Footer",
     "\\src\\components\\Formulario",
     "\\src\\components\\Header",
     "\\src\\components\\Main",
     "\\src\\components\\Portfolio",
+    "\\src\\components\\Sobre",
+    "\\src\\components\\Team",
     "\\src\\styles"
   ],
-  "SelectedNode": "\\src\\components\\Main\\Main.jsx",
+  "SelectedNode": "\\src\\components\\Sobre\\Sobre.jsx",
   "PreviewInSolutionExplorer": false
 }

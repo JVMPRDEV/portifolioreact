@@ -24,9 +24,9 @@ const Main = () => {
                         <div className="section--left">
                             {isLoading ? (
                                 <>
-                                    <Skeleton className="skeleton-title" />
-                                    <Skeleton count={3} className="skeleton-description" />
-                                    <Skeleton className="skeleton-button" />
+                                    <Skeleton className="main-skeleton-title" />
+                                    <Skeleton count={3} className="main-skeleton-description" />
+                                    <Skeleton className="main-skeleton-button" />
                                 </>
                             ) : (
                                 <>
@@ -46,7 +46,7 @@ const Main = () => {
                         </div>
                         <div className="section--rigth">
                             {isLoading ? (
-                                <Skeleton className="skeleton-hexagon" />
+                                <Skeleton className="main-skeleton-hexagon" />
                             ) : (
                                 <img src={pessoaImg} alt="Pessoa" className="hexagonal-image" />
                             )}

@@ -50,14 +50,16 @@ const Especialidades = () => {
                 NOSSAS <span>ESPECIALIDADES</span>
             </h2>
             {isLoading ? (
-                <div className="skeleton-container">
+                <div className="skeleton-especialidades-container">
                     {[1, 2, 3].map((_, index) => (
-                        <div key={index} className="especialidades--box skeleton-box">
-                            <div className="skeleton-spinner-container">
+                        <div key={index} className="skeleton-especialidades-box">
+                            <div className="skeleton-especialidades-spinner">
                                 <ClipLoader color="#FFAA33" size={40} />
                             </div>
-                            <h3>Carregando...</h3>
-                            <p>Por favor, aguarde enquanto carregamos o conteúdo.</p>
+                            <h3 className="skeleton-especialidades-title">Carregando...</h3>
+                            <p className="skeleton-especialidades-description">
+                                Por favor, aguarde enquanto carregamos o conteúdo.
+                            </p>
                         </div>
                     ))}
                 </div>

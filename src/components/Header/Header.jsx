@@ -1,7 +1,16 @@
 import React, { useEffect, useState, useRef } from "react";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-import { FaHome, FaStar, FaInfoCircle, FaProjectDiagram, FaSun, FaMoon, FaBars, FaTimes } from "react-icons/fa"; // Ícones do React Icons
+import {
+    FaHome,
+    FaStar,
+    FaInfoCircle,
+    FaProjectDiagram,
+    FaSun,
+    FaMoon,
+    FaBars,
+    FaTimes,
+} from "react-icons/fa";
 import {
     NavigationMenu,
     NavigationMenuList,
@@ -76,11 +85,11 @@ const Header = () => {
 
     return (
         <header>
-            {/* Overlay para escurecer o fundo */}
+            {/* Overlay */}
             {isMenuOpen && <div className="overlay" onClick={() => setIsMenuOpen(false)} />}
 
             <div className="interface">
-                {/* Menu Lateral */}
+                {/* Sidebar Menu */}
                 {!isLoading && (
                     <Collapsible open={isMenuOpen} onOpenChange={setIsMenuOpen}>
                         <CollapsibleContent className="menu-sidebar" ref={sidebarRef}>
@@ -102,9 +111,7 @@ const Header = () => {
                             <nav className="menu-nav">
                                 <ul>{renderMenuLinks()}</ul>
                             </nav>
-                            <footer className="menu-footer">
-                                © 2025 Todos os direitos reservados.
-                            </footer>
+                            <footer className="menu-footer">© 2025 Todos os direitos reservados.</footer>
                         </CollapsibleContent>
 
                         <CollapsibleTrigger asChild>
@@ -126,7 +133,7 @@ const Header = () => {
                             height={50}
                             width={150}
                             borderRadius={10}
-                            className="skeleton-logo"
+                            className="header-skeleton-logo"
                         />
                     ) : (
                         <a href="#Inicio" aria-label="Ir para o início">
@@ -135,19 +142,23 @@ const Header = () => {
                     )}
                 </div>
 
-                {/* Menu de Navegação (Desktop) */}
+                {/* Desktop Navigation Menu */}
                 {!isLoading && (
                     <NavigationMenu className="menu-desktop">
                         <NavigationMenuList>{renderNavigationMenu()}</NavigationMenuList>
                     </NavigationMenu>
                 )}
 
-                {/* Botões de Ação */}
+                {/* Action Buttons */}
                 <div className="header-btn-container">
                     {isLoading ? (
                         <>
-                            <Skeleton height={40} width={120} borderRadius={30} />
-                            <Skeleton height={40} width={40} borderRadius="50%" />
+                            <Skeleton
+                                height={40}
+                                width={40}
+                                borderRadius="50%"
+                                className="header-skeleton-theme-switcher"
+                            />
                         </>
                     ) : (
                         <>
