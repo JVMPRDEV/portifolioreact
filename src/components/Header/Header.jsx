@@ -64,14 +64,20 @@ const Header = () => {
         { name: "Projetos", icon: <FaProjectDiagram /> },
     ];
 
-    const renderMenuLinks = () =>
-        menuItems.map((item) => (
+    const renderMenuLinks = () => {
+        const itemsWithContact = [
+            ...menuItems,
+            { name: "Contato", icon: <FaInfoCircle />, href: "#Contato" }, // Adiciona o item "Contato"
+        ];
+
+        return itemsWithContact.map((item) => (
             <li key={item.name}>
-                <a href={`#${item.name}`} onClick={toggleMenu}>
+                <a href={item.href || `#${item.name}`} onClick={toggleMenu}>
                     <span className="menu-icon">{item.icon}</span> {item.name}
                 </a>
             </li>
         ));
+    };
 
     const renderNavigationMenu = () =>
         menuItems.map((item) => (
@@ -102,7 +108,11 @@ const Header = () => {
                                     <FaTimes />
                                 </button>
                                 <div className="menu-logo">
-                                    <a href="#Inicio" aria-label="Ir para o início">
+                                    <a
+                                        href="#Inicio"
+                                        aria-label="Ir para o início"
+                                        onClick={() => setIsMenuOpen(false)} // Fecha o menu lateral ao clicar
+                                    >
                                         <img src={logo} alt="Logo da empresa" />
                                     </a>
                                 </div>
