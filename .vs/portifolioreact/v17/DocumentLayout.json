@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "C:\\workspace\\portifolioreact\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\components\\Main\\Main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Main\\Main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\components\\Header\\Header.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Header\\Header.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\components\\Header\\Header.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Header\\Header.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\components\\Formulario\\Formulario.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Formulario\\Formulario.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\styles\\variables.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\styles\\variables.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\components\\Formulario\\Formulario.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Formulario\\Formulario.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\components\\Portfolio\\Portfolio.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Portfolio\\Portfolio.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\components\\Portfolio\\Portfolio.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Portfolio\\Portfolio.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\styles\\responsive.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\styles\\responsive.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\styles\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\styles\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,80 +50,93 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "responsive.css",
-              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\styles\\responsive.css",
-              "RelativeDocumentMoniker": "src\\styles\\responsive.css",
-              "ToolTip": "C:\\workspace\\portifolioreact\\src\\styles\\responsive.css",
-              "RelativeToolTip": "src\\styles\\responsive.css",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAAAB0AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-13T03:47:31.426Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Formulario.css",
-              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\components\\Formulario\\Formulario.css",
-              "RelativeDocumentMoniker": "src\\components\\Formulario\\Formulario.css",
-              "ToolTip": "C:\\workspace\\portifolioreact\\src\\components\\Formulario\\Formulario.css",
-              "RelativeToolTip": "src\\components\\Formulario\\Formulario.css",
-              "ViewState": "AQIAAE4AAAAAAAAAAAAAAGgAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-13T03:47:25.017Z",
+              "Title": "Main.jsx",
+              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\components\\Main\\Main.jsx",
+              "RelativeDocumentMoniker": "src\\components\\Main\\Main.jsx",
+              "ToolTip": "C:\\workspace\\portifolioreact\\src\\components\\Main\\Main.jsx",
+              "RelativeToolTip": "src\\components\\Main\\Main.jsx",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAkwCUAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-13T04:28:27.765Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Formulario.jsx",
-              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\components\\Formulario\\Formulario.jsx",
-              "RelativeDocumentMoniker": "src\\components\\Formulario\\Formulario.jsx",
-              "ToolTip": "C:\\workspace\\portifolioreact\\src\\components\\Formulario\\Formulario.jsx",
-              "RelativeToolTip": "src\\components\\Formulario\\Formulario.jsx",
+              "Title": "Header.jsx",
+              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\components\\Header\\Header.jsx",
+              "RelativeDocumentMoniker": "src\\components\\Header\\Header.jsx",
+              "ToolTip": "C:\\workspace\\portifolioreact\\src\\components\\Header\\Header.jsx",
+              "RelativeToolTip": "src\\components\\Header\\Header.jsx",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-01-13T03:47:23.681Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "style.css",
-              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\styles\\style.css",
-              "RelativeDocumentMoniker": "src\\styles\\style.css",
-              "ToolTip": "C:\\workspace\\portifolioreact\\src\\styles\\style.css",
-              "RelativeToolTip": "src\\styles\\style.css",
-              "ViewState": "AQIAAH0AAAAAAAAAAAAkwIcAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-13T03:45:48.193Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Portfolio.jsx",
-              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\components\\Portfolio\\Portfolio.jsx",
-              "RelativeDocumentMoniker": "src\\components\\Portfolio\\Portfolio.jsx",
-              "ToolTip": "C:\\workspace\\portifolioreact\\src\\components\\Portfolio\\Portfolio.jsx",
-              "RelativeToolTip": "src\\components\\Portfolio\\Portfolio.jsx",
-              "ViewState": "AQIAAHUAAAAAAAAAAAAwwJkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-01-13T03:31:30.601Z",
+              "WhenOpened": "2025-01-13T04:28:02.692Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Portfolio.css",
-              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\components\\Portfolio\\Portfolio.css",
-              "RelativeDocumentMoniker": "src\\components\\Portfolio\\Portfolio.css",
-              "ToolTip": "C:\\workspace\\portifolioreact\\src\\components\\Portfolio\\Portfolio.css",
-              "RelativeToolTip": "src\\components\\Portfolio\\Portfolio.css",
-              "ViewState": "AQIAAIgAAAAAAAAAAAAkwJUAAAAAAAAA",
+              "Title": "Header.css",
+              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\components\\Header\\Header.css",
+              "RelativeDocumentMoniker": "src\\components\\Header\\Header.css",
+              "ToolTip": "C:\\workspace\\portifolioreact\\src\\components\\Header\\Header.css",
+              "RelativeToolTip": "src\\components\\Header\\Header.css",
+              "ViewState": "AQIAAA8BAAAAAAAAAAAQwCkBAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-13T03:31:29.995Z",
+              "WhenOpened": "2025-01-13T04:27:56.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "variables.css",
+              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\styles\\variables.css",
+              "RelativeDocumentMoniker": "src\\styles\\variables.css",
+              "ToolTip": "C:\\workspace\\portifolioreact\\src\\styles\\variables.css",
+              "RelativeToolTip": "src\\styles\\variables.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-13T04:24:23.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\workspace\\portifolioreact\\package.json",
+              "RelativeDocumentMoniker": "package.json",
+              "ToolTip": "C:\\workspace\\portifolioreact\\package.json",
+              "RelativeToolTip": "package.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-13T04:19:19.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Formulario.jsx",
+              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\components\\Formulario\\Formulario.jsx",
+              "RelativeDocumentMoniker": "src\\components\\Formulario\\Formulario.jsx",
+              "ToolTip": "C:\\workspace\\portifolioreact\\src\\components\\Formulario\\Formulario.jsx",
+              "RelativeToolTip": "src\\components\\Formulario\\Formulario.jsx",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAFsAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-13T03:59:07.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Formulario.css",
+              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\components\\Formulario\\Formulario.css",
+              "RelativeDocumentMoniker": "src\\components\\Formulario\\Formulario.css",
+              "ToolTip": "C:\\workspace\\portifolioreact\\src\\components\\Formulario\\Formulario.css",
+              "RelativeToolTip": "src\\components\\Formulario\\Formulario.css",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAlwG4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-13T03:59:07.375Z",
               "EditorCaption": ""
             }
           ]

@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import InputMask from "react-input-mask"; // Certifique-se de que este pacote esteja instalado
 import "./Formulario.css";
 
 const validationSchema = Yup.object({
     name: Yup.string().required("Por favor, informe seu nome completo."),
     email: Yup.string().email("Formato inválido").required("Por favor, informe seu e-mail."),
     cellphone: Yup.string()
-        .matches(/^[0-9]{11}$/, "Digite 11 números.")
+        .matches(/^\(\d{2}\) \d{4,5}-\d{4}$/, "Formato inválido. Use (XX) XXXXX-XXXX.")
         .required("Por favor, informe seu celular."),
     message: Yup.string().required("Por favor, digite sua mensagem."),
 });
@@ -28,15 +29,10 @@ const Formulario = () => {
                 </h2>
                 {isLoading ? (
                     <div className="skeleton-container">
-                        {/* Placeholder para Nome */}
                         <div className="skeleton skeleton-line"></div>
-                        {/* Placeholder para Email */}
                         <div className="skeleton skeleton-line"></div>
-                        {/* Placeholder para Celular */}
                         <div className="skeleton skeleton-line"></div>
-                        {/* Placeholder para Mensagem */}
                         <div className="skeleton skeleton-rectangle"></div>
-                        {/* Placeholder para o Botão */}
                         <div className="skeleton skeleton-button"></div>
                     </div>
                 ) : (
@@ -49,7 +45,7 @@ const Formulario = () => {
                             resetForm();
                         }}
                     >
-                        {({ isSubmitting }) => (
+                        {({ isSubmitting, setFieldValue }) => (
                             <Form>
                                 {/* Campo Nome */}
                                 <div className="form-field">
@@ -60,6 +56,7 @@ const Formulario = () => {
                                     />
                                     <ErrorMessage name="name" component="p" className="form-error" />
                                 </div>
+
                                 {/* Campo Email */}
                                 <div className="form-field">
                                     <Field
@@ -70,19 +67,27 @@ const Formulario = () => {
                                     />
                                     <ErrorMessage name="email" component="p" className="form-error" />
                                 </div>
+
                                 {/* Campo Celular */}
                                 <div className="form-field">
-                                    <Field
-                                        name="cellphone"
-                                        placeholder="Celular com DDD"
-                                        className="form-input"
-                                    />
+                                    <Field name="cellphone">
+                                        {({ field }) => (
+                                            <InputMask
+                                                {...field}
+                                                mask="(99) 99999-9999"
+                                                placeholder="Celular com DDD"
+                                                className="form-input"
+                                                onChange={(e) => setFieldValue("cellphone", e.target.value)}
+                                            />
+                                        )}
+                                    </Field>
                                     <ErrorMessage
                                         name="cellphone"
                                         component="p"
                                         className="form-error"
                                     />
                                 </div>
+
                                 {/* Campo Mensagem */}
                                 <div className="form-field">
                                     <Field
@@ -97,6 +102,7 @@ const Formulario = () => {
                                         className="form-error"
                                     />
                                 </div>
+
                                 {/* Botão Enviar */}
                                 <div className="btn-enviar">
                                     <button
