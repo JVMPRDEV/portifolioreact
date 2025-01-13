@@ -41,7 +41,7 @@ const Formulario = () => {
     }, []);
 
     return (
-        <section className="formulario section-spacing" id="Contato" role="region" aria-label="Formulário de contato">
+        <section className="formulario section-spacing" id="Contato" aria-label="Formulário de contato">
             <div className="form-box">
                 <h2 className="title--port title--form">
                     FALE <span>CONOSCO</span>

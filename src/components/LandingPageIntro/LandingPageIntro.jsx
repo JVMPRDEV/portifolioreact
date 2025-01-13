@@ -6,7 +6,7 @@ import "./LandingPageIntro.css";
 
 const LandingPageIntro = ({ isLoading }) => {
     return (
-        <section className="landing-intro" id="Inicio" role="region" aria-label="Introdução da página">
+        <section className="landing-intro" id="Inicio" aria-label="Introdução da página">
             <div className="landing-intro__content">
                 <div className="landing-intro__left">
                     {isLoading ? (
