@@ -15,141 +15,312 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
         width: 100%;
+        transition: filter 0.3s ease;
     }
+
+        header .interface.blur-content {
+            filter: blur(5px);
+            pointer-events: none;
+        }
+
+/* OVERLAY */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1049;
+    transition: opacity 0.3s ease;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+}
 
 /* MENU DESKTOP */
 .menu-desktop {
     display: flex;
+    justify-content: center;
+    flex: 1;
 }
 
     .menu-desktop ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
         display: flex;
         gap: 40px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
     }
 
-    .menu-desktop li {
-        display: inline;
-    }
-
-/* Links do menu com animações */
 .menu-link {
+    position: relative;
     color: var(--color-link);
-    text-decoration: none;
     font-size: 1rem;
     padding: 0.5rem 1rem;
     border-radius: 5px;
-    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
-    position: relative;
+    text-decoration: none;
     overflow: hidden;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
 }
 
     .menu-link::before {
         content: "";
         position: absolute;
-        left: 0;
         bottom: 0;
+        left: 0;
         width: 0;
         height: 2px;
         background: var(--color-highlight);
         transition: width 0.3s ease;
     }
 
-    .menu-link:hover::before {
-        width: 100%; /* Efeito underline no hover */
-    }
-
     .menu-link:hover {
         color: var(--color-highlight);
-        transform: scale(1.05); /* Leve aumento */
+        transform: scale(1.05);
     }
 
-/* Botão de Contato e Troca de Tema */
+        .menu-link:hover::before {
+            width: 100%;
+        }
+
+/* BOTÕES DE AÇÃO */
 .header-btn-container {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-/* Botão de Contato */
-.btn-contato button {
-    padding: 0.6rem 2.5rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 30px;
-    background-color: var(--color-highlight);
-    color: var(--color-button-text);
-    cursor: pointer;
-    font-weight: 600;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-}
-
-    .btn-contato button:hover {
-        transform: scale(1.1); /* Leve aumento no hover */
-        box-shadow: 0 0 10px var(--color-highlight);
-    }
-
-/* Botão de troca de tema */
+.header-btn-contato button,
 .theme-switcher-btn {
-    width: 40px;
-    height: 40px;
-    background-color: var(--color-highlight);
-    border: none;
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.header-btn-contato button {
+    padding: 0.6rem 2.5rem;
+    border-radius: 30px;
+    background-color: var(--color-highlight);
+    color: var(--color-button-text);
+    font-weight: 600;
+}
+
+    .header-btn-contato button:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 5px var(--color-highlight);
+    }
+
+.theme-switcher-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     font-size: 1.2rem;
+    background-color: var(--color-highlight);
     color: var(--color-text);
-    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
     .theme-switcher-btn:hover {
-        transform: rotate(180deg); /* Efeito de rotação */
+        transform: rotate(180deg);
         background-color: var(--color-button-bg);
         box-shadow: 0 0 10px var(--color-highlight);
     }
 
-/* Mobile Menu Styles */
-.sidebar {
-    display: none; /* Escondido por padrão */
+/* Menu Lateral */
+.menu-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 280px; /* Tamanho adequado para legibilidade */
+    background-color: var(--color-header-bg);
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transform: translateX(-100%);
+    opacity: 0; /* Transparência inicial */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transição suave */
+    z-index: 1050;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Mantém o rodapé fixo na parte inferior */
+    padding: 1.5rem; /* Espaçamento interno */
+    overflow-y: auto; /* Suporte para rolagem em telas menores */
+    touch-action: manipulation; /* Evita gestos acidentais */
 }
 
-/* Radix Accessibility Styles */
-[data-state="open"] .menu-link {
-    background-color: var(--color-highlight);
-    color: var(--color-text-dark);
+/* Estado Aberto do Menu Lateral */
+[data-state="open"] .menu-sidebar {
+    transform: translateX(0);
+    opacity: 1; /* Visível quando aberto */
 }
 
-/* Skeleton Loader */
-.skeleton-logo {
-    height: 50px;
-    width: 150px;
-    border-radius: 10px;
-    background-color: var(--color-skeleton-bg);
+/* Cabeçalho do Menu (Logo e Botão X) */
+.menu-header {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-border);
+    position: relative; /* Permite posicionamento do botão X */
 }
 
-.skeleton-menu {
-    height: 30px;
-    width: 100px;
-    border-radius: 5px;
-    background-color: var(--color-skeleton-bg);
-    margin: 0 15px;
+.menu-logo {
+    flex-grow: 1; /* Garante que a logo ocupe o centro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.skeleton-button {
-    height: 40px;
-    width: 120px;
-    border-radius: 30px;
-    background-color: var(--color-skeleton-bg);
+
+    .menu-logo img {
+        height: 45px;
+        width: auto;
+        object-fit: contain; /* Garantia de boa exibição */
+    }
+
+.menu-close-btn {
+    position: absolute; /* Para não ocupar espaço no fluxo */
+    left: 1rem; /* Fixado na lateral esquerda */
+    top: 40%; /* Centraliza no eixo vertical */
+    transform: translateY(-50%);
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--color-link);
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.skeleton-theme {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background-color: var(--color-skeleton-bg);
+    .menu-close-btn:hover,
+    .menu-close-btn:focus {
+        color: var(--color-highlight);
+    }
+
+/* Navegação (Itens do Menu) */
+.menu-nav {
+    flex-grow: 1; /* Preenche o espaço disponível entre cabeçalho e rodapé */
+    margin-top: 1rem;
+}
+
+    .menu-nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem; /* Maior espaçamento entre itens */
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        .menu-nav ul li a {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem; /* Espaço entre ícone e texto */
+            color: var(--color-link);
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding: 0.8rem 1rem;
+            border-radius: 8px; /* Bordas suaves */
+            text-decoration: none;
+            background-color: transparent;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+        }
+
+            .menu-nav ul li a:hover,
+            .menu-nav ul li a:focus {
+                background-color: var(--color-highlight);
+                color: var(--color-text-dark);
+                transform: scale(1.05); /* Leve aumento para indicar ação */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Destaque com sombra */
+            }
+
+/* Rodapé */
+.menu-footer {
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--color-link);
+    padding: 1rem 0;
+    border-top: 1px solid var(--color-border);
+    background-color: var(--color-header-bg-alt); /* Fundo levemente diferente */
+}
+
+    /* Acessibilidade */
+    .menu-footer:focus,
+    .menu-nav ul li a:focus {
+        outline: 3px solid var(--color-highlight); /* Foco visível */
+        outline-offset: 2px;
+    }
+
+.menu-icon {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+
+/* Ocultar ícones em telas maiores que 768px */
+@media screen and (min-width: 769px) {
+    .menu-icon {
+        display: none;
+    }
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 1020px) {
+    .header-btn-contato {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header .interface {
+        justify-content: space-between;
+    }
+
+    .menu-hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        color: var(--color-link);
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-right: 1rem;
+    }
+
+    .menu-desktop {
+        display: none;
+    }
+
+    .menu-sidebar {
+        width: 80%; /* Usa maior parte da largura em telas pequenas */
+    }
+
+    .menu-nav ul li a {
+        font-size: 1.1rem; /* Ajusta tamanho da fonte */
+        padding: 0.7rem 0.8rem;
+    }
+
+    .menu-footer {
+        font-size: 0.8rem; /* Fonte menor no rodapé */
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .menu-hamburger {
+        display: none;
+    }
 }
