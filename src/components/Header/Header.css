@@ -270,64 +270,6 @@ header {
 }
 
 
-/* Ocultar ícones em telas maiores que 768px */
-@media screen and (min-width: 769px) {
-    .menu-icon {
-        display: none;
-    }
-}
-
-/* RESPONSIVIDADE */
-@media screen and (max-width: 1020px) {
-    .header-btn-contato {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    header .interface {
-        justify-content: space-between;
-    }
-
-    .menu-hamburger {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.8rem;
-        color: var(--color-link);
-        background: none;
-        border: none;
-        cursor: pointer;
-        margin-right: 1rem;
-    }
-
-    .menu-desktop {
-        display: none;
-    }
-
-    .menu-sidebar {
-        width: 80%; /* Usa maior parte da largura em telas pequenas */
-    }
-
-    .menu-nav ul li a {
-        font-size: 1.1rem; /* Ajusta tamanho da fonte */
-        padding: 0.7rem 0.8rem;
-    }
-
-    .menu-footer {
-        font-size: 0.8rem; /* Fonte menor no rodapé */
-    }
-}
-
-@media screen and (min-width: 769px) {
-    .menu-hamburger {
-        display: none;
-    }
-}
-
-
-/* inserir estilo direito, não vi que to com sono*/
-
 /* Container do Header */
 .header-container {
     display: flex;
@@ -369,8 +311,59 @@ header {
     height: 40px;
 }
 
-/* Telas Menores */
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 1020px) {
+    .header-btn-contato {
+        display: none;
+    }
+}
+
+/* Ocultar ícones em telas maiores que 768px */
+@media screen and (min-width: 769px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .menu-hamburger {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 768px) {
+    header .interface {
+        justify-content: space-between;
+    }
+
+    .menu-hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        color: var(--color-link);
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-right: 1rem;
+    }
+
+    .menu-desktop {
+        display: none;
+    }
+
+    .menu-sidebar {
+        width: 80%; /* Usa maior parte da largura em telas pequenas */
+    }
+
+    .menu-nav ul li a {
+        font-size: 1.1rem; /* Ajusta tamanho da fonte */
+        padding: 0.7rem 0.8rem;
+    }
+
+    .menu-footer {
+        font-size: 0.8rem; /* Fonte menor no rodapé */
+    }
+
     .header-container {
         padding: 0.5rem 1rem;
     }
