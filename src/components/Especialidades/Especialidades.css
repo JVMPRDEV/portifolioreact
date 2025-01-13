@@ -170,6 +170,15 @@
 }
 
 @media screen and (max-width: 768px) {
+    .title--especialidades {
+        font-size: 1rem;
+        line-height: 1;
+    }
+
+    .especialidades {
+        padding: 4rem 9%;
+    }
+
     .img-port {
         width: calc(100% - 20px); /* 1 item por linha */
     }

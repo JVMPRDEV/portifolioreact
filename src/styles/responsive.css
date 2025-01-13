@@ -2,6 +2,7 @@
 
 @media screen and (max-width: 1020px) {
 
+    /* Geral */
     .flex {
         flex-direction: column;
     }

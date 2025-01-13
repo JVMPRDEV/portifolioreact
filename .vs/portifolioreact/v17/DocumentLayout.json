@@ -3,40 +3,28 @@
   "WorkspaceRootPath": "C:\\workspace\\portifolioreact\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\components\\Portfolio\\Portfolio.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Portfolio\\Portfolio.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\components\\Formulario\\Formulario.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Formulario\\Formulario.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\components\\Formulario\\Formulario.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Formulario\\Formulario.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\components\\Portfolio\\Portfolio.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Portfolio\\Portfolio.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\components\\Portfolio\\Portfolio.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Portfolio\\Portfolio.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\styles\\responsive.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\styles\\responsive.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\components\\Especialidades\\Especialidades.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Especialidades\\Especialidades.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\components\\Especialidades\\Especialidades.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Especialidades\\Especialidades.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\components\\Header\\Header.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Header\\Header.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\components\\Header\\Header.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Header\\Header.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\components\\Main\\Main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Main\\Main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\styles\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\styles\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,119 +46,80 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "responsive.css",
+              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\styles\\responsive.css",
+              "RelativeDocumentMoniker": "src\\styles\\responsive.css",
+              "ToolTip": "C:\\workspace\\portifolioreact\\src\\styles\\responsive.css",
+              "RelativeToolTip": "src\\styles\\responsive.css",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAB0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-13T03:47:31.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Formulario.css",
+              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\components\\Formulario\\Formulario.css",
+              "RelativeDocumentMoniker": "src\\components\\Formulario\\Formulario.css",
+              "ToolTip": "C:\\workspace\\portifolioreact\\src\\components\\Formulario\\Formulario.css",
+              "RelativeToolTip": "src\\components\\Formulario\\Formulario.css",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAGgAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-13T03:47:25.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Formulario.jsx",
+              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\components\\Formulario\\Formulario.jsx",
+              "RelativeDocumentMoniker": "src\\components\\Formulario\\Formulario.jsx",
+              "ToolTip": "C:\\workspace\\portifolioreact\\src\\components\\Formulario\\Formulario.jsx",
+              "RelativeToolTip": "src\\components\\Formulario\\Formulario.jsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-13T03:47:23.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\styles\\style.css",
+              "RelativeDocumentMoniker": "src\\styles\\style.css",
+              "ToolTip": "C:\\workspace\\portifolioreact\\src\\styles\\style.css",
+              "RelativeToolTip": "src\\styles\\style.css",
+              "ViewState": "AQIAAH0AAAAAAAAAAAAkwIcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-13T03:45:48.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Portfolio.jsx",
               "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\components\\Portfolio\\Portfolio.jsx",
               "RelativeDocumentMoniker": "src\\components\\Portfolio\\Portfolio.jsx",
               "ToolTip": "C:\\workspace\\portifolioreact\\src\\components\\Portfolio\\Portfolio.jsx",
               "RelativeToolTip": "src\\components\\Portfolio\\Portfolio.jsx",
-              "ViewState": "AQIAAHMAAAAAAAAAAAAwwIIAAAAWAAAA",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAwwJkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2025-01-13T03:31:30.601Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Portfolio.css",
               "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\components\\Portfolio\\Portfolio.css",
               "RelativeDocumentMoniker": "src\\components\\Portfolio\\Portfolio.css",
               "ToolTip": "C:\\workspace\\portifolioreact\\src\\components\\Portfolio\\Portfolio.css",
               "RelativeToolTip": "src\\components\\Portfolio\\Portfolio.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAIgAAAAAAAAAAAAkwJUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-01-13T03:31:29.995Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "responsive.css",
-              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\styles\\responsive.css",
-              "RelativeDocumentMoniker": "src\\styles\\responsive.css",
-              "ToolTip": "C:\\workspace\\portifolioreact\\src\\styles\\responsive.css",
-              "RelativeToolTip": "src\\styles\\responsive.css",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAAAEoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-13T03:10:21.234Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Especialidades.css",
-              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\components\\Especialidades\\Especialidades.css",
-              "RelativeDocumentMoniker": "src\\components\\Especialidades\\Especialidades.css",
-              "ToolTip": "C:\\workspace\\portifolioreact\\src\\components\\Especialidades\\Especialidades.css",
-              "RelativeToolTip": "src\\components\\Especialidades\\Especialidades.css",
-              "ViewState": "AQIAAGgAAAAAAAAAAAAAAJoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-13T03:10:05.165Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Especialidades.jsx",
-              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\components\\Especialidades\\Especialidades.jsx",
-              "RelativeDocumentMoniker": "src\\components\\Especialidades\\Especialidades.jsx",
-              "ToolTip": "C:\\workspace\\portifolioreact\\src\\components\\Especialidades\\Especialidades.jsx",
-              "RelativeToolTip": "src\\components\\Especialidades\\Especialidades.jsx",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAwwGMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-01-13T03:09:30.579Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Main.css",
-              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\components\\Main\\Main.css",
-              "RelativeDocumentMoniker": "src\\components\\Main\\Main.css",
-              "ToolTip": "C:\\workspace\\portifolioreact\\src\\components\\Main\\Main.css",
-              "RelativeToolTip": "src\\components\\Main\\Main.css",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAkwC8AAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-13T03:01:08.22Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "App.js",
-              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\App.js",
-              "RelativeDocumentMoniker": "src\\App.js",
-              "ToolTip": "C:\\workspace\\portifolioreact\\src\\App.js",
-              "RelativeToolTip": "src\\App.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-13T02:29:12.912Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Header.jsx",
-              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\components\\Header\\Header.jsx",
-              "RelativeDocumentMoniker": "src\\components\\Header\\Header.jsx",
-              "ToolTip": "C:\\workspace\\portifolioreact\\src\\components\\Header\\Header.jsx",
-              "RelativeToolTip": "src\\components\\Header\\Header.jsx",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAADMAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-01-12T23:00:21.728Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Header.css",
-              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\components\\Header\\Header.css",
-              "RelativeDocumentMoniker": "src\\components\\Header\\Header.css",
-              "ToolTip": "C:\\workspace\\portifolioreact\\src\\components\\Header\\Header.css",
-              "RelativeToolTip": "src\\components\\Header\\Header.css",
-              "ViewState": "AQIAABQBAAAAAAAAAAAAACkBAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-12T23:00:20.581Z",
               "EditorCaption": ""
             }
           ]

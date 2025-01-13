@@ -107,3 +107,10 @@
     border-radius: 8px;
     animation: shimmer 1.5s infinite;
 }
+
+/* Estilo Responsivo */
+@media screen and (max-width: 768px) {
+    .form-box{
+        margin:0 2rem;
+    }
+}

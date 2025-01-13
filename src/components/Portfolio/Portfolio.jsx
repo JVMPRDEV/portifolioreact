@@ -69,11 +69,13 @@ const Portfolio = () => {
     const openModal = (imageUrl) => {
         setSelectedImage(imageUrl);
         setIsModalOpen(true);
+        document.body.classList.add("no-interaction"); // Bloqueia interações no fundo
     };
 
     const closeModal = () => {
         setIsModalOpen(false);
         setSelectedImage(null);
+        document.body.classList.remove("no-interaction"); // Restaura interações
     };
 
     return (
