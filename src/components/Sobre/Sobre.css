@@ -24,12 +24,14 @@
     padding: 1rem;
     height: 360px;
     transition: transform 0.4s ease, box-shadow 0.4s ease, height 0.4s ease;
+    border: 2px solid transparent;
 }
 
     .team-card:hover {
         transform: scale(1.05);
         box-shadow: 0 8px 16px var(--color-card-shadow-hover);
         height: 440px;
+        border: 2px solid var(--color-highlight);
     }
 
 /* Nome */
