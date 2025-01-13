@@ -1,115 +1,14 @@
 @import '../../styles/variables.css';
 
-.section--principal {
-    padding-block: 5rem;
-    padding-inline: 2rem;
-    max-width: 1280px;
-    overflow: hidden;
-    margin: auto;
-    background-color: var(--color-background);
-    color: var(--color-text-dark);
-}
-
-.flex {
+/* Flex layout */
+.flex-container {
     display: flex;
     align-items: center;
     gap: 4rem;
 }
 
-.section--left,
-.section--rigth {
-    flex: 1;
-}
-
-.section--title {
-    font-size: 3rem;
-    font-weight: 600;
-    line-height: 1;
-    color: var(--color-title);
-}
-
-    .section--title span {
-        color: var(--color-title-highlight);
-    }
-
-.section--description {
-    font-size: 0.9rem;
-    padding-block: 1.3rem;
-    font-weight: 300;
-    color: var(--color-description);
-    text-align: justify;
-}
-
-.section--left {
-    padding-left: 1.8rem;
-}
-
-.section--rigth img {
-    animation: flutuar 2s ease-in-out infinite alternate;
-    margin-left: 10rem;
-    max-width: 350px;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    border-radius: 0;
-}
-
-/* Botão de contato */
-.btn-contato {
-    display: flex;
-    justify-content: flex-start; /* Alinhamento padrão */
-}
-
-    .btn-contato button {
-        padding: 0.6rem 2.5rem;
-        font-size: 1rem;
-        border: none;
-        border-radius: 30px;
-        background-color: var(--color-highlight);
-        color: var(--color-button-text);
-        cursor: pointer;
-        font-weight: 600;
-        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    }
-
-        .btn-contato button:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 10px var(--color-highlight);
-        }
-
-/* Hexagonal Placeholder */
-.main-skeleton-hexagon {
-    width: 350px;
-    height: 350px;
-    margin-left: 10rem;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    background-color: var(--color-card-bg);
-}
-
-/* Título Placeholder */
-.main-skeleton-title {
-    width: 60%;
-    height: 40px;
-    margin-bottom: 1rem;
-    border-radius: 8px;
-}
-
-/* Descrição Placeholder */
-.main-skeleton-description {
-    width: 80%;
-    height: 20px;
-    margin-bottom: 0.8rem;
-    border-radius: 5px;
-}
-
-/* Botão Placeholder */
-.main-skeleton-button {
-    width: 150px;
-    height: 40px;
-    margin-top: 1rem;
-    border-radius: 20px;
-}
-
-/* Animação de flutuar */
-@keyframes flutuar {
+/* Animações reutilizáveis */
+@keyframes floatAnimation {
     0% {
         top: 0;
     }
@@ -120,74 +19,15 @@
 }
 
 @media screen and (max-width: 1020px) {
-    /* Seção Principal */
-    .section--principal {
-        padding: 2rem 8%;
-    }
-
-        .section--principal .flex {
-            flex-direction: column-reverse;
-            gap: 1.5rem;
-        }
-
-        .section--principal .section--left {
-            padding-inline: 0;
-        }
-
-            .section--principal .section--left .section--title {
-                font-size: 2rem;
-            }
-
-        .section--principal .section--rigth img {
-            margin: auto;
-        }
-
-    .section--rigth {
-        display: flex;
-        justify-content: center; /* Centraliza o hexágono horizontalmente */
-        align-items: center; /* Centraliza o hexágono verticalmente */
-    }
-
-    .main-skeleton-hexagon {
-        width: 250px; /* Reduz o tamanho do hexágono */
-        height: 250px;
-        margin: 0 auto; /* Garante o centro horizontal */
-        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    }
-
-    .section--rigth img {
-        margin: 0 auto; /* Centraliza a imagem se estiver carregada */
-    }
-
-    .section--left {
-        padding: 0;
-        text-align: center; /* Centraliza o texto */
-    }
-
-    .btn-contato {
-        justify-content: center; /* Centraliza o botão */
+    .flex-container {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
     }
 }
 
 @media screen and (max-width: 450px) {
-    .section--principal {
-        padding: 2rem 8%;
+    .flex-container {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
     }
-
-        .section--principal .flex {
-            flex-direction: column-reverse;
-            gap: 1.5rem;
-        }
-
-        .section--principal .section--left {
-            padding-inline: 0;
-        }
-
-            .section--principal .section--left .section--title {
-                font-size: 2rem;
-            }
-
-        .section--principal .section--rigth img {
-            margin: auto;
-        }
 }

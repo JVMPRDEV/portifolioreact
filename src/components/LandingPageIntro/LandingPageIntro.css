@@ -1,0 +1,205 @@
+@import '../../styles/variables.css';
+
+.landing-intro {
+	padding-block: 5rem;
+	padding-inline: 2rem;
+	max-width: 1280px;
+	overflow: hidden;
+	margin: auto;
+	background-color: var(--color-background);
+	color: var(--color-text-dark);
+}
+
+.landing-intro__content {
+	display: flex;
+	align-items: center;
+	gap: 4rem;
+}
+
+.landing-intro__left,
+.landing-intro__right {
+	flex: 1;
+}
+
+.landing-intro__title {
+	font-size: 3rem;
+	font-weight: 600;
+	line-height: 1;
+	color: var(--color-title);
+}
+
+.landing-intro__title--highlight {
+	color: var(--color-title-highlight);
+}
+
+.landing-intro__description {
+	font-size: 0.9rem;
+	padding-block: 1.3rem;
+	font-weight: 300;
+	color: var(--color-description);
+	text-align: justify;
+}
+
+.landing-intro__left {
+	padding-left: 1.8rem;
+}
+
+.landing-intro__right img {
+	margin-left: 10rem;
+	max-width: 350px;
+	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+	border-radius: 0;
+}
+
+.landing-intro__button {
+	padding: 0.6rem 2.5rem;
+	font-size: 1rem;
+	border: none;
+	border-radius: 30px;
+	background-color: var(--color-highlight);
+	color: var(--color-button-text);
+	cursor: pointer;
+	font-weight: 600;
+	transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+	.landing-intro__button:hover {
+		transform: scale(1.1);
+		box-shadow: 0 0 10px var(--color-highlight);
+	}
+
+/* Skeleton placeholders */
+.landing-intro__skeleton-hexagon {
+	width: 350px;
+	height: 350px;
+	margin-left: 10rem;
+	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+	background-color: var(--color-card-bg);
+	animation: floatAnimation 2s ease-in-out infinite alternate, skeletonLoading 1.5s infinite ease-in-out;
+}
+
+.landing-intro__skeleton-title,
+.landing-intro__skeleton-description,
+.landing-intro__skeleton-button {
+	background-color: var(--color-card-bg); /* Cor de carregamento */
+	animation: skeletonLoading 1.5s infinite ease-in-out; /* Efeito de carregamento */
+}
+
+.landing-intro__skeleton-title {
+	width: 60%;
+	height: 40px;
+	margin-bottom: 1rem;
+	border-radius: 8px;
+}
+
+.landing-intro__skeleton-description {
+	width: 80%;
+	height: 20px;
+	margin-bottom: 0.8rem;
+	border-radius: 5px;
+}
+
+.landing-intro__skeleton-button {
+	width: 150px;
+	height: 40px;
+	margin-top: 1rem;
+	border-radius: 20px;
+}
+
+/* Animação de flutuar */
+@keyframes floatAnimation {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(15px);
+	}
+}
+
+/* Animação de carregamento */
+@keyframes skeletonLoading {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.4;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Responsividade */
+@media screen and (max-width: 1020px) {
+	.landing-intro {
+		padding: 2rem 8%;
+	}
+
+	.landing-intro__content {
+		flex-direction: column-reverse;
+		gap: 1.5rem;
+		align-items: center; /* Centraliza horizontalmente todos os elementos filhos */
+	}
+
+	.landing-intro__left {
+		padding-inline: 0;
+		text-align: center; /* Centraliza o texto */
+	}
+
+	.landing-intro__title {
+		font-size: 2rem;
+	}
+
+	.landing-intro__description {
+		margin: 0 auto; /* Garante centralização horizontal */
+	}
+
+	.landing-intro__skeleton-hexagon {
+		width: 250px;
+		height: 250px;
+		margin: 0 auto;
+	}
+
+	.landing-intro__skeleton-title,
+	.landing-intro__skeleton-description,
+	.landing-intro__skeleton-button {
+		margin: 0.8rem auto; /* Centraliza horizontalmente */
+	}
+
+	.landing-intro__right img {
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.landing-intro {
+		padding: 2rem 8%;
+	}
+
+	.landing-intro__content {
+		gap: 1rem; /* Reduz o espaçamento em resoluções muito pequenas */
+	}
+
+	.landing-intro__title {
+		font-size: 1.8rem;
+	}
+
+	.landing-intro__description {
+		font-size: 0.85rem; /* Ajusta tamanho da fonte em telas pequenas */
+	}
+
+	.landing-intro__skeleton-hexagon {
+		width: 200px;
+		height: 200px;
+	}
+
+	.landing-intro__skeleton-title,
+	.landing-intro__skeleton-description,
+	.landing-intro__skeleton-button {
+		width: 90%; /* Expande os placeholders para preencher mais espaço */
+		margin: 0.8rem auto;
+	}
+}

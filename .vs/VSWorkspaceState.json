@@ -3,14 +3,14 @@
     "",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\Formulario",
-    "\\src\\components\\Header",
-    "\\src\\components\\Main",
-    "\\src\\components\\Portfolio",
-    "\\src\\components\\Sobre",
-    "\\src\\components\\Team",
-    "\\src\\styles"
+    "\\src\\components\\Especialidades",
+    "\\src\\components\\Footer",
+    "\\src\\components\\ThemeSwitcher",
+    "\\src\\components\\Tutorial",
+    "\\src\\context",
+    "\\src\\styles",
+    "\\src\\utils"
   ],
-  "SelectedNode": "\\.gitignore",
+  "SelectedNode": "\\src\\components\\Header\\Header.css",
   "PreviewInSolutionExplorer": false
 }
