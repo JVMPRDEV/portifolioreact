@@ -59,21 +59,21 @@ const Header = () => {
     const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
     const menuItems = [
-        { name: "Inicio", icon: <FaHome /> },
-        { name: "Especialidades", icon: <FaStar /> },
-        { name: "Nossa Equipe", icon: <FaUsers /> }, // Ícone atualizado
-        { name: "Projetos", icon: <FaProjectDiagram /> },
+        { name: "Inicio", icon: <FaHome />, id: "Inicio" },
+        { name: "Especialidades", icon: <FaStar />, id: "Especialidades" },
+        { name: "Nossa Equipe", icon: <FaUsers />, id: "Sobre" }, // Nome exibido diferente do id
+        { name: "Projetos", icon: <FaProjectDiagram />, id: "Projetos" },
     ];
 
     const renderMenuLinks = () => {
         const itemsWithContact = [
             ...menuItems,
-            { name: "Contato", icon: <FaEnvelope />, href: "#Contato" }, // Ícone atualizado
+            { name: "Contato", icon: <FaEnvelope />, id: "Contato" },
         ];
 
         return itemsWithContact.map((item) => (
-            <li key={item.name}>
-                <a href={item.href || `#${item.name}`} onClick={toggleMenu}>
+            <li key={item.id}>
+                <a href={`#${item.id}`} onClick={toggleMenu}>
                     <span className="menu-icon">{item.icon}</span> {item.name}
                 </a>
             </li>
@@ -82,8 +82,8 @@ const Header = () => {
 
     const renderNavigationMenu = () =>
         menuItems.map((item) => (
-            <NavigationMenuItem key={item.name}>
-                <NavigationMenuLink className="menu-link" href={`#${item.name}`}>
+            <NavigationMenuItem key={item.id}>
+                <NavigationMenuLink className="menu-link" href={`#${item.id}`}>
                     <span className="menu-icon">{item.icon}</span>
                     <span>{item.name}</span>
                 </NavigationMenuLink>
