@@ -49,7 +49,7 @@ const Header = () => {
     const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
     const menuItems = [
-        { name: "Início", icon: <FaHome /> },
+        { name: "Inicio", icon: <FaHome /> },
         { name: "Especialidades", icon: <FaStar /> },
         { name: "Sobre", icon: <FaInfoCircle /> },
         { name: "Projetos", icon: <FaProjectDiagram /> },
