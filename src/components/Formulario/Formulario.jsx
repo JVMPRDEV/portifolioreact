@@ -41,44 +41,51 @@ const Formulario = () => {
     }, []);
 
     return (
-        <section className="formulario section-spacing" id="Contato">
+        <section className="formulario section-spacing" id="Contato" role="region" aria-label="Formulário de contato">
             <div className="form-box">
                 <h2 className="title--port title--form">
                     FALE <span>CONOSCO</span>
                 </h2>
                 {isLoading ? (
-                    <div className="skeleton-container">
-                        <div className="skeleton skeleton-line"></div>
-                        <div className="skeleton skeleton-line"></div>
-                        <div className="skeleton skeleton-line"></div>
-                        <div className="skeleton skeleton-rectangle"></div>
-                        <div className="skeleton skeleton-button"></div>
+                    <div className="skeleton-container" aria-busy="true" aria-live="polite">
+                        <div className="skeleton skeleton-line" aria-hidden="true"></div>
+                        <div className="skeleton skeleton-line" aria-hidden="true"></div>
+                        <div className="skeleton skeleton-line" aria-hidden="true"></div>
+                        <div className="skeleton skeleton-rectangle" aria-hidden="true"></div>
+                        <div className="skeleton skeleton-button" aria-hidden="true"></div>
                     </div>
                 ) : (
-                    <form onSubmit={handleSubmit(onSubmit)}>
+                    <form onSubmit={handleSubmit(onSubmit)} aria-label="Formulário de contato">
                         {/* Campo Nome */}
                         <div className="form-field">
+                            <label htmlFor="name">Nome completo</label>
                             <input
+                                id="name"
                                 {...register("name")}
                                 placeholder="Nome completo"
                                 className="form-input"
+                                aria-invalid={!!errors.name}
                             />
-                            {errors.name && <p className="form-error">{errors.name.message}</p>}
+                            {errors.name && <p className="form-error" role="alert">{errors.name.message}</p>}
                         </div>
 
                         {/* Campo Email */}
                         <div className="form-field">
+                            <label htmlFor="email">E-mail</label>
                             <input
+                                id="email"
                                 {...register("email")}
                                 type="email"
                                 placeholder="E-mail válido"
                                 className="form-input"
+                                aria-invalid={!!errors.email}
                             />
-                            {errors.email && <p className="form-error">{errors.email.message}</p>}
+                            {errors.email && <p className="form-error" role="alert">{errors.email.message}</p>}
                         </div>
 
                         {/* Campo Celular */}
                         <div className="form-field">
+                            <label htmlFor="cellphone">Celular</label>
                             <Controller
                                 name="cellphone"
                                 control={control}
@@ -86,26 +93,31 @@ const Formulario = () => {
                                 render={({ field }) => (
                                     <InputMask
                                         {...field}
+                                        id="cellphone"
                                         mask="(99) 99999-9999"
                                         placeholder="Celular com DDD"
                                         className="form-input"
+                                        aria-invalid={!!errors.cellphone}
                                     />
                                 )}
                             />
                             {errors.cellphone && (
-                                <p className="form-error">{errors.cellphone.message}</p>
+                                <p className="form-error" role="alert">{errors.cellphone.message}</p>
                             )}
                         </div>
 
                         {/* Campo Mensagem */}
                         <div className="form-field">
+                            <label htmlFor="message">Mensagem</label>
                             <textarea
+                                id="message"
                                 {...register("message")}
                                 placeholder="Digite sua mensagem aqui"
                                 className="form-textarea"
+                                aria-invalid={!!errors.message}
                             ></textarea>
                             {errors.message && (
-                                <p className="form-error">{errors.message.message}</p>
+                                <p className="form-error" role="alert">{errors.message.message}</p>
                             )}
                         </div>
 
@@ -115,6 +127,7 @@ const Formulario = () => {
                                 type="submit"
                                 className="form-button"
                                 disabled={isSubmitting}
+                                aria-disabled={isSubmitting}
                             >
                                 {isSubmitting ? "Enviando..." : "ENVIAR"}
                             </button>

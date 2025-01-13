@@ -61,7 +61,7 @@ const Header = () => {
     const menuItems = [
         { name: "Inicio", icon: <FaHome />, id: "Inicio" },
         { name: "Especialidades", icon: <FaStar />, id: "Especialidades" },
-        { name: "Nossa Equipe", icon: <FaUsers />, id: "Sobre" }, // Nome exibido diferente do id
+        { name: "Nossa Equipe", icon: <FaUsers />, id: "Sobre" },
         { name: "Projetos", icon: <FaProjectDiagram />, id: "Projetos" },
     ];
 
@@ -73,7 +73,7 @@ const Header = () => {
 
         return itemsWithContact.map((item) => (
             <li key={item.id}>
-                <a href={`#${item.id}`} onClick={toggleMenu}>
+                <a href={`#${item.id}`} onClick={toggleMenu} aria-label={`Ir para ${item.name}`}>
                     <span className="menu-icon">{item.icon}</span> {item.name}
                 </a>
             </li>
@@ -83,7 +83,11 @@ const Header = () => {
     const renderNavigationMenu = () =>
         menuItems.map((item) => (
             <NavigationMenuItem key={item.id}>
-                <NavigationMenuLink className="menu-link" href={`#${item.id}`}>
+                <NavigationMenuLink
+                    className="menu-link"
+                    href={`#${item.id}`}
+                    aria-label={`Navegar para ${item.name}`}
+                >
                     <span className="menu-icon">{item.icon}</span>
                     <span>{item.name}</span>
                 </NavigationMenuLink>
@@ -91,15 +95,19 @@ const Header = () => {
         ));
 
     return (
-        <header className={isMenuOpen ? "menu-open" : ""}>
-            {/* Overlay */}
-            {isMenuOpen && <div className="general-overlay" onClick={() => setIsMenuOpen(false)} />}
+        <header className={isMenuOpen ? "menu-open" : ""} aria-label="Cabeçalho">
+            {isMenuOpen && (
+                <div
+                    className="general-overlay"
+                    onClick={() => setIsMenuOpen(false)}
+                    aria-hidden="true"
+                />
+            )}
 
             <div className="interface">
-                {/* Sidebar Menu */}
                 {!isLoading && (
                     <Collapsible open={isMenuOpen} onOpenChange={setIsMenuOpen}>
-                        <CollapsibleContent className="menu-sidebar" ref={sidebarRef}>
+                        <CollapsibleContent className="menu-sidebar" ref={sidebarRef} role="navigation" aria-label="Menu lateral">
                             <div className="menu-header">
                                 <button
                                     className="menu-close-btn"
@@ -121,9 +129,7 @@ const Header = () => {
                             <nav className="menu-nav">
                                 <ul>{renderMenuLinks()}</ul>
                             </nav>
-                            <div className="menu-footer">
-                                © 2025 Todos os direitos reservados.
-                            </div>
+                            <div className="menu-footer">© 2025 Todos os direitos reservados.</div>
                         </CollapsibleContent>
 
                         <CollapsibleTrigger asChild>
@@ -138,7 +144,6 @@ const Header = () => {
                     </Collapsible>
                 )}
 
-                {/* Logo */}
                 <div className="logo">
                     {isLoading ? (
                         <Skeleton
@@ -146,6 +151,7 @@ const Header = () => {
                             width={150}
                             borderRadius={10}
                             className="header-skeleton-logo"
+                            aria-label="Carregando logo"
                         />
                     ) : (
                         <a href="#Inicio" aria-label="Ir para o início">
@@ -154,27 +160,24 @@ const Header = () => {
                     )}
                 </div>
 
-                {/* Desktop Navigation Menu */}
                 {!isLoading && (
-                    <NavigationMenu className="menu-desktop">
+                    <NavigationMenu className="menu-desktop" role="navigation" aria-label="Menu de navegação principal">
                         <NavigationMenuList>{renderNavigationMenu()}</NavigationMenuList>
                     </NavigationMenu>
                 )}
 
-                {/* Action Buttons */}
                 <div className="header-btn-container">
                     {isLoading ? (
-                        <>
-                            <Skeleton
-                                height={40}
-                                width={40}
-                                borderRadius="50%"
-                                className="header-skeleton-theme-switcher"
-                            />
-                        </>
+                        <Skeleton
+                            height={40}
+                            width={40}
+                            borderRadius="50%"
+                            className="header-skeleton-theme-switcher"
+                            aria-label="Carregando alternador de tema"
+                        />
                     ) : (
                         <>
-                            <a href="#Contato" className="header-btn-contato">
+                            <a href="#Contato" className="header-btn-contato" aria-label="Ir para a seção de contato">
                                 <button>Contato</button>
                             </a>
                             <button
@@ -191,7 +194,6 @@ const Header = () => {
             </div>
         </header>
     );
-
 };
 
 export default Header;

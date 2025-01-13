@@ -33,20 +33,17 @@ const Portfolio = () => {
     const [selectedImage, setSelectedImage] = useState(null);
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
-    // Atualiza o estado de carregamento
     useEffect(() => {
         const timeout = setTimeout(() => setIsLoading(false), 2000);
         return () => clearTimeout(timeout);
     }, []);
 
-    // Atualiza a largura da tela dinamicamente
     useEffect(() => {
         const handleResize = () => setScreenWidth(window.innerWidth);
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-    // Inicializa e gerencia o Isotope para filtros
     useEffect(() => {
         if (!isLoading) {
             const iso = new Isotope(".grid", {
@@ -76,32 +73,29 @@ const Portfolio = () => {
         }
     }, [isLoading]);
 
-    // Abre o modal com a imagem selecionada
     const openModal = (imageUrl) => {
         setSelectedImage(imageUrl);
         setIsModalOpen(true);
         document.body.classList.add("no-interaction");
     };
 
-    // Fecha o modal
     const closeModal = () => {
         setIsModalOpen(false);
         setSelectedImage(null);
         document.body.classList.remove("no-interaction");
     };
 
-    // Função para renderizar Skeleton
     const renderSkeletonGrid = () => {
-        const columns = screenWidth <= 768 ? 2 : 3; // 2 colunas no celular, 3 no desktop
-        const rows = 3; // Sempre 3 linhas
+        const columns = screenWidth <= 768 ? 2 : 3;
+        const rows = 3;
         const totalSkeletons = columns * rows;
 
         return (
-            <div className="grid" id="portfolio-grid">
+            <div className="grid" id="portfolio-grid" role="region" aria-label="Carregando portfólio">
                 {Array.from({ length: totalSkeletons }).map((_, index) => (
                     <div key={index} className="skeleton-card">
-                        <div className="loading-container">
-                            <ClipLoader color="#FFAA33" size={40} />
+                        <div className="loading-container" role="status" aria-live="polite">
+                            <ClipLoader color="#FFAA33" size={40} aria-hidden="true" />
                             <p className="loading-text">Carregando...</p>
                             <p className="loading-description">Por favor, aguarde.</p>
                         </div>
@@ -118,8 +112,7 @@ const Portfolio = () => {
                     NOSSO <span>PORTFÓLIO</span>
                 </h2>
 
-                {/* Filtros */}
-                <div className="filters" id="portfolio-filters">
+                <div className="filters" id="portfolio-filters" role="navigation" aria-label="Filtros de portfólio">
                     {isLoading
                         ? Array.from({ length: filtros.length }).map((_, index) => (
                             <Skeleton
@@ -135,21 +128,23 @@ const Portfolio = () => {
                                 key={index}
                                 className={index === 0 ? "active" : ""}
                                 data-filter={filtro.filter}
+                                aria-label={`Filtrar por ${filtro.label}`}
                             >
                                 {filtro.label}
                             </button>
                         ))}
                 </div>
 
-                {/* Projetos ou Skeleton */}
                 {isLoading ? renderSkeletonGrid() : (
-                    <div className="grid" id="portfolio-grid">
+                    <div className="grid" id="portfolio-grid" role="region" aria-label="Projetos do portfólio">
                         {projetos.map((projeto, index) => (
                             <div
                                 key={index}
                                 className={`img-port ${projeto.categoria}`}
                                 style={{ backgroundImage: `url(${projeto.imagem})` }}
                                 onClick={() => openModal(projeto.imagem)}
+                                role="button"
+                                aria-label={`Visualizar detalhes do projeto ${projeto.titulo}`}
                             >
                                 <div className="portfolio-overlay">{projeto.titulo}</div>
                             </div>
@@ -158,16 +153,27 @@ const Portfolio = () => {
                 )}
             </section>
 
-            {/* Modal */}
             {isModalOpen && (
-                <div className="general-overlay" onClick={closeModal}>
+                <div
+                    className="general-overlay"
+                    onClick={closeModal}
+                    role="dialog"
+                    aria-labelledby="modal-title"
+                    aria-hidden={!isModalOpen}
+                    tabIndex="-1"
+                >
                     <img
                         src={selectedImage}
-                        alt="Projeto"
+                        alt="Projeto em destaque"
                         className="modal-content"
                         onClick={(e) => e.stopPropagation()}
                     />
-                    <span className="close-modal" onClick={closeModal}>
+                    <span
+                        className="close-modal"
+                        onClick={closeModal}
+                        role="button"
+                        aria-label="Fechar modal"
+                    >
                         ×
                     </span>
                 </div>

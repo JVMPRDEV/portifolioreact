@@ -15,12 +15,20 @@ const Main = () => {
     }, []);
 
     return (
-        <main>
+        <main role="main" aria-label="Conteúdo principal">
             <LandingPageIntro isLoading={isLoading} />
-            <Especialidades />
-            <Sobre />
-            <Portfolio />
-            <Formulario />
+            <section aria-labelledby="especialidades-title">
+                <Especialidades />
+            </section>
+            <section aria-labelledby="sobre-title">
+                <Sobre />
+            </section>
+            <section aria-labelledby="portfolio-title">
+                <Portfolio />
+            </section>
+            <section aria-labelledby="formulario-title">
+                <Formulario />
+            </section>
         </main>
     );
 };

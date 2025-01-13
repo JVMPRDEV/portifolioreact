@@ -6,14 +6,21 @@ import "./LandingPageIntro.css";
 
 const LandingPageIntro = ({ isLoading }) => {
     return (
-        <section className="landing-intro" id="Inicio">
+        <section className="landing-intro" id="Inicio" role="region" aria-label="Introdução da página">
             <div className="landing-intro__content">
                 <div className="landing-intro__left">
                     {isLoading ? (
                         <>
-                            <Skeleton className="landing-intro__skeleton-title" />
-                            <Skeleton count={3} className="landing-intro__skeleton-description" />
-                            <Skeleton className="landing-intro__skeleton-button" />
+                            <Skeleton className="landing-intro__skeleton-title" aria-label="Carregando título" />
+                            <Skeleton
+                                count={3}
+                                className="landing-intro__skeleton-description"
+                                aria-label="Carregando descrição"
+                            />
+                            <Skeleton
+                                className="landing-intro__skeleton-button"
+                                aria-label="Carregando botão"
+                            />
                         </>
                     ) : (
                         <>
@@ -25,7 +32,12 @@ const LandingPageIntro = ({ isLoading }) => {
                             </p>
                             <div className="landing-intro__button-wrapper">
                                 <a href="#Contato">
-                                    <button className="landing-intro__button">Entre em Contato</button>
+                                    <button
+                                        className="landing-intro__button"
+                                        aria-label="Botão para entrar em contato"
+                                    >
+                                        Entre em Contato
+                                    </button>
                                 </a>
                             </div>
                         </>
@@ -33,9 +45,16 @@ const LandingPageIntro = ({ isLoading }) => {
                 </div>
                 <div className="landing-intro__right">
                     {isLoading ? (
-                        <Skeleton className="landing-intro__skeleton-hexagon" />
+                        <Skeleton
+                            className="landing-intro__skeleton-hexagon"
+                            aria-label="Carregando imagem"
+                        />
                     ) : (
-                        <img src={pessoaImg} alt="Pessoa" className="landing-intro__image" />
+                        <img
+                            src={pessoaImg}
+                            alt="Ilustração de uma pessoa relacionada aos dados"
+                            className="landing-intro__image"
+                        />
                     )}
                 </div>
             </div>

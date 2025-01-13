@@ -57,6 +57,12 @@ const Sobre = () => {
         return () => clearTimeout(timeout);
     }, []);
 
+    useEffect(() => {
+        if (isModalOpen) {
+            document.querySelector(".general-overlay").focus();
+        }
+    }, [isModalOpen]);
+
     const openModal = (imgSrc) => {
         setSelectedImage(imgSrc);
         setIsModalOpen(true);
@@ -70,8 +76,8 @@ const Sobre = () => {
     const renderSkeleton = () =>
         Array.from({ length: 3 }).map((_, index) => (
             <div key={index} className="team-card skeleton-card">
-                <div className="loading-container">
-                    <ClipLoader color="#FFAA33" size={40} />
+                <div className="loading-container" role="status" aria-live="polite">
+                    <ClipLoader color="#FFAA33" size={40} aria-hidden="true" />
                     <h3 className="loading-text">Carregando...</h3>
                     <p className="loading-description">Estamos carregando as informações. Por favor, aguarde.</p>
                 </div>
@@ -98,7 +104,7 @@ const Sobre = () => {
                         href={link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label={platform}
+                        aria-label={`Acessar o perfil de ${member.name} no ${platform}`}
                     >
                         <i className={`fab fa-${platform}`}></i>
                     </a>
@@ -119,14 +125,26 @@ const Sobre = () => {
 
                 {/* Modal */}
                 {isModalOpen && selectedImage && (
-                    <div className="general-overlay" onClick={closeModal}>
+                    <div
+                        className="general-overlay"
+                        onClick={closeModal}
+                        role="dialog"
+                        aria-labelledby="modal-title"
+                        aria-hidden={!isModalOpen}
+                        tabIndex="-1"
+                    >
                         <img
                             src={selectedImage}
-                            alt="Foto do membro da equipe"
+                            alt="Imagem ampliada de um membro da equipe"
                             className="modal-image"
                             onClick={(e) => e.stopPropagation()}
                         />
-                        <span className="close-modal" onClick={closeModal}>
+                        <span
+                            className="close-modal"
+                            onClick={closeModal}
+                            role="button"
+                            aria-label="Fechar modal"
+                        >
                             &times;
                         </span>
                     </div>
