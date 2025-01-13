@@ -317,20 +317,7 @@ header {
     .header-btn-contato {
         display: none;
     }
-}
 
-/* Ocultar ícones em telas maiores que 768px */
-@media screen and (min-width: 769px) {
-    .menu-icon {
-        display: none;
-    }
-
-    .menu-hamburger {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 768px) {
     header .interface {
         justify-content: space-between;
     }
@@ -376,5 +363,16 @@ header {
     .header-skeleton-center {
         width: 150px;
         height: 50px;
+    }
+}
+
+/* Ocultar ícones em telas maiores que 768px */
+@media screen and (min-width: 1020px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .menu-hamburger {
+        display: none;
     }
 }
