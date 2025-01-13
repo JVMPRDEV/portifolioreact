@@ -3,11 +3,12 @@ import "./Tutorial.css";
 
 const Tutorial = ({ onClose }) => {
     return (
-        <div className="tutorial-overlay">
-            <div className="tutorial-modal">
+        <div className="tutorial-overlay" onClick={onClose}>
+            <div className="tutorial-modal" onClick={(e) => e.stopPropagation()}>
                 <h2>Bem-vindo!</h2>
                 <p>
-                    Este site permite que você altere o tema! Clique no ícone de <strong>lua</strong> ou <strong>sol</strong> no canto superior direito para alternar entre os modos claro e escuro.
+                    Este site permite que você altere o tema!
+                    Clique no ícone de <strong>lua</strong> ou <strong>sol</strong> no canto superior direito para alternar entre os modos claro e escuro.
                 </p>
                 <button onClick={onClose} className="tutorial-btn">
                     Entendi

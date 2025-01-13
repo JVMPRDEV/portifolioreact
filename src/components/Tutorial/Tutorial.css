@@ -1,53 +1,70 @@
-/* Tutorial Overlay */
+/* Overlay */
 .tutorial-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro com opacidade */
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semitransparente */
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 2000;
+    backdrop-filter: blur(5px); /* Efeito de desfoque */
 }
 
-/* Tutorial Modal */
+/* Modal */
 .tutorial-modal {
     background-color: var(--color-background);
     color: var(--color-text);
-    padding: 2rem;
-    border-radius: 10px;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    box-shadow: 0 4px 8px var(--color-box-shadow-footer);
-    max-width: 400px;
+    max-width: 350px;
     width: 90%;
+    animation: fadeIn 0.3s ease; /* Animação de entrada */
 }
 
     .tutorial-modal h2 {
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
         color: var(--color-highlight);
     }
 
     .tutorial-modal p {
         font-size: 1rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
+        line-height: 1.5;
     }
 
-/* Botão do Tutorial */
+/* Botão */
 .tutorial-btn {
-    padding: 0.8rem 1.5rem;
+    padding: 0.6rem 1.2rem;
     background-color: var(--color-highlight);
     color: var(--color-button-text);
     border: none;
     border-radius: 8px;
     font-size: 1rem;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
     .tutorial-btn:hover {
         background-color: var(--color-button-bg);
         transform: scale(1.05);
     }
+
+/* Animação */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
