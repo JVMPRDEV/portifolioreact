@@ -7,6 +7,10 @@
         align-items: center; /* Centraliza os elementos */
         gap: 2rem; /* Espaçamento entre os elementos */
     }
+
+    .title--port {
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width: 768px) {

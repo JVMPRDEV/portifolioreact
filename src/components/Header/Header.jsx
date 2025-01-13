@@ -4,12 +4,13 @@ import "react-loading-skeleton/dist/skeleton.css";
 import {
     FaHome,
     FaStar,
-    FaInfoCircle,
     FaProjectDiagram,
     FaSun,
     FaMoon,
     FaBars,
     FaTimes,
+    FaUsers,
+    FaEnvelope,
 } from "react-icons/fa";
 import {
     NavigationMenu,
@@ -60,14 +61,14 @@ const Header = () => {
     const menuItems = [
         { name: "Inicio", icon: <FaHome /> },
         { name: "Especialidades", icon: <FaStar /> },
-        { name: "Sobre", icon: <FaInfoCircle /> },
+        { name: "Nossa Equipe", icon: <FaUsers /> }, // Ícone atualizado
         { name: "Projetos", icon: <FaProjectDiagram /> },
     ];
 
     const renderMenuLinks = () => {
         const itemsWithContact = [
             ...menuItems,
-            { name: "Contato", icon: <FaInfoCircle />, href: "#Contato" }, // Adiciona o item "Contato"
+            { name: "Contato", icon: <FaEnvelope />, href: "#Contato" }, // Ícone atualizado
         ];
 
         return itemsWithContact.map((item) => (

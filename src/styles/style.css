@@ -134,3 +134,15 @@ svg {
 html {
     scroll-behavior: smooth;
 }
+
+.title--port {
+    text-align: center;
+    font-size: 2.65rem;
+    margin-top: 4rem;
+    font-weight: 600;
+}
+
+    .title--port span {
+        color: var(--color-highlight);
+    }
+

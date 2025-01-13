@@ -20,16 +20,10 @@
 }
 
 /* Título */
-.form-title-port {
-    text-align: center;
-    font-size: 2.65rem;
-    font-weight: 600;
+.title--form {
+    margin-top: 0;
     margin-bottom: 2rem;
 }
-
-    .form-title-port span {
-        color: var(--color-highlight);
-    }
 
 /* Campos de entrada */
 .form-field {

@@ -24,7 +24,7 @@ const Formulario = () => {
     return (
         <section className="formulario section-spacing" id="Contato">
             <div className="form-box">
-                <h2 className="form-title-port">
+                <h2 className="title--port title--form">
                     FALE <span>CONOSCO</span>
                 </h2>
                 {isLoading ? (

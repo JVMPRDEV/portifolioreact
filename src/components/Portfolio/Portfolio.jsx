@@ -115,7 +115,7 @@ const Portfolio = () => {
         <>
             <section className="portfolio section-spacing" id="Projetos">
                 <h2 className="title--port">
-                    Nosso <span>PORTFÓLIO</span>
+                    NOSSO <span>PORTFÓLIO</span>
                 </h2>
 
                 {/* Filtros */}
