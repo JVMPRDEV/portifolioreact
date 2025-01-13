@@ -3,14 +3,9 @@
     "",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\Especialidades",
-    "\\src\\components\\Footer",
-    "\\src\\components\\ThemeSwitcher",
-    "\\src\\components\\Tutorial",
-    "\\src\\context",
-    "\\src\\styles",
-    "\\src\\utils"
+    "\\src\\components\\Header",
+    "\\src\\styles"
   ],
-  "SelectedNode": "\\src\\components\\Header\\Header.css",
+  "SelectedNode": "\\src\\components\\Header\\Header.jsx",
   "PreviewInSolutionExplorer": false
 }
