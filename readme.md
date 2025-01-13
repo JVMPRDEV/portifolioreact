@@ -1,68 +1,70 @@
 ﻿# 📂 Portfólio React
 
-Este é um projeto de portfólio desenvolvido em **React**, com foco em acessibilidade, design responsivo e usabilidade. O projeto foi estruturado utilizando diversas tecnologias modernas, como **Storybook**, **Radix UI** e **React Skeleton**, proporcionando uma experiência de usuário intuitiva e dinâmica.
+Este é um projeto de portfólio desenvolvido em **React**, focado em acessibilidade, design responsivo e usabilidade. Ele combina tecnologias modernas e práticas de desenvolvimento de ponta para criar uma experiência de usuário dinâmica e intuitiva. O projeto inclui integração com ferramentas como **Storybook** e **Radix UI**, além de animações e validações inteligentes.
 
 ---
 
-## 🚰️ Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas
 
 ### **Frontend**
-
-- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
-- **Storybook**: Ferramenta para documentar e testar componentes em isolamento.
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário reativas.
+- **Storybook**: Documentação interativa e visualização de componentes em isolamento.
 - **Radix UI**: Componentes acessíveis e personalizáveis para React.
-- **React Skeleton**: Animações de carregamento para placeholders (efeito "esqueleto").
-- **Sass/CSS**: Para estilização com suporte a variáveis e mixins.
+- **Tailwind CSS**: Framework utilitário para estilização rápida e eficiente.
+- **Formik** e **Yup**: Gerenciamento e validação de formulários.
+- **React Loading Skeleton**: Placeholders animados para carregamento.
+- **React Spinners**: Indicadores de carregamento com animações.
+- **Swiper**: Biblioteca para carrosséis e sliders.
 
-### **Ferramentas e Configurações**
+### **Bibliotecas de Suporte**
+- **Isotope.js**: Layouts dinâmicos e filtráveis.
+- **React Hook Form**: Gerenciamento de formulários baseado em hooks.
+- **Font Awesome** e **React Icons**: Ícones para interfaces modernas.
+- **React Input Mask**: Máscaras de entrada para formulários.
 
-- **Isotope.js**: Biblioteca para layouts dinâmicos e filtráveis.
-- **Formik & Yup**: Gerenciamento de formulários e validação de dados.
-- **React Spinners**: Indicadores de carregamento personalizados.
-- **Node.js**: Plataforma para executar código JavaScript no backend.
-- **NPM**: Gerenciador de pacotes utilizado para dependências.
+### **Ferramentas de Build e Estilo**
+- **Tailwind CSS Forms & Typography**: Extensões do Tailwind para formulários e tipografia.
+- **Autoprefixer** e **PostCSS**: Otimizações de CSS.
 
 ---
 
-## 🚀 Funcionalidades
+## ✨ Funcionalidades
 
-### Portfólio
+### **Portfólio**
+- Listagem dinâmica e filtrável de projetos.
+- Modal para visualização ampliada de imagens dos projetos.
 
-- Visualização de projetos com categorias filtráveis.
-- Modal de exibição ampliada para imagens dos projetos.
+### **Acessibilidade**
+- Implementação com **Radix UI** para suportar leitores de tela.
+- Skeleton loaders para suavizar a experiência de carregamento.
 
-### Acessibilidade
-
-- Implementação com **Radix UI** para melhorar a experiência para usuários de leitores de tela.
-- Skeleton loaders para suavizar o carregamento de conteúdo.
-
-### Formulário de Contato
-
+### **Formulário de Contato**
 - Validação com **Formik** e **Yup**.
-- Feedback visual durante o envio de mensagens.
+- Feedback visual claro durante o envio de mensagens.
 
-### Storybook
+### **Storybook**
+- Documentação e testes de componentes reutilizáveis.
 
-- Documentação e visualização interativa de componentes.
+### **Design Responsivo**
+- Layouts otimizados para diferentes tamanhos de tela.
+- Efeitos e interações suaves que realçam a usabilidade.
 
 ---
 
-## 📦 Estrutura de Pastas
+## 📂 Estrutura de Pastas
 
 ```plaintext
 src/
-├── assets/          # Imagens e fontes
+├── assets/          # Imagens, fontes e outros recursos
 ├── components/      # Componentes reutilizáveis
 │   ├── Header/
 │   ├── Footer/
-│   ├── Main/
 │   ├── Portfolio/
-│   ├── Sobre/
 │   ├── Formulario/
-│   └── Especialidades/
-├── styles/          # Estilização global e variáveis
+│   └── Sobre/
+├── styles/          # Estilos globais e variáveis
 ├── .storybook/      # Configurações do Storybook
-└── App.js           # Arquivo principal do React
+└── App.js           # Ponto de entrada da aplicação
 ```
 
 ---
@@ -70,49 +72,43 @@ src/
 ## 🖥️ Pré-requisitos
 
 - **Node.js**: Versão 18 ou superior.
-- **NPM**: Gerenciador de pacotes (instalado com o Node.js).
+- **NPM ou Yarn**: Gerenciador de pacotes.
 
 ---
 
 ## ⚙️ Instalação
 
-1. **Clone o repositório**:
-
+1. Clone o repositório:
    ```bash
    git clone https://github.com/JVMPRDEV/portifolio-react.git
    cd portifolio-react
    ```
 
-2. **Instale as dependências**:
-
+2. Instale as dependências:
    ```bash
    npm install
    ```
 
-3. **Inicie o projeto**:
-
+3. Inicie o projeto:
    ```bash
    npm start
    ```
 
-4. **Acesse no navegador**:
-
+4. Acesse no navegador:
    ```
    http://localhost:3000
    ```
 
 ---
 
-## 🔓 Documentação com Storybook
+## 📄 Storybook
 
-1. **Inicie o Storybook**:
-
+1. Inicie o Storybook:
    ```bash
    npm run storybook
    ```
 
-2. **Acesse a interface do Storybook**:
-
+2. Acesse a interface do Storybook:
    ```
    http://localhost:6006
    ```
@@ -121,38 +117,35 @@ src/
 
 ## 🧹 Contribuindo
 
-1. **Faça um fork deste repositório**.
-2. **Crie uma branch para suas alterações**:
+1. Faça um fork deste repositório.
+2. Crie uma branch para suas alterações:
    ```bash
    git checkout -b minha-nova-feature
    ```
-3. **Faça o commit**:z
+3. Faça o commit:
    ```bash
    git commit -m "Adiciona nova feature"
    ```
-4. **Envie para sua branch remota**:
+4. Envie para sua branch remota:
    ```bash
    git push origin minha-nova-feature
    ```
-5. **Abra um Pull Request no repositório original**.
+5. Abra um Pull Request.
 
 ---
 
 ## 🎨 Demonstração
 
-Adicione aqui uma imagem ou GIF que mostre a funcionalidade do projeto.
+Confira o projeto ao vivo: [Portfólio React](https://portifolioreact-1ibx.vercel.app)
 
 ---
 
 ## 📄 Licença
 
-Este projeto está sob a licença **MIT**. Veja o arquivo `LICENSE` para mais detalhes.
+Este projeto está licenciado sob os termos da licença **MIT**. Consulte o arquivo `LICENSE` para mais informações.
 
 ---
 
 ## 👨‍💻 Autor
 
 Desenvolvido com 💻 por **João Rocha**.
-
----
-
