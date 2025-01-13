@@ -151,7 +151,7 @@ const Portfolio = () => {
                                 style={{ backgroundImage: `url(${projeto.imagem})` }}
                                 onClick={() => openModal(projeto.imagem)}
                             >
-                                <div className="overlay">{projeto.titulo}</div>
+                                <div className="portfolio-overlay">{projeto.titulo}</div>
                             </div>
                         ))}
                     </div>
@@ -160,7 +160,7 @@ const Portfolio = () => {
 
             {/* Modal */}
             {isModalOpen && (
-                <div className="modal" onClick={closeModal}>
+                <div className="general-overlay" onClick={closeModal}>
                     <img
                         src={selectedImage}
                         alt="Projeto"

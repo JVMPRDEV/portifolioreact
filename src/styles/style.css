@@ -52,45 +52,24 @@ svg {
     color: var(--color-highlight);
 }
 
-.overlay {
-    background-color: var(--color-overlay-background); /* Mantido */
-    color: var(--color-overlay-text); /* Mantido */
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    font-weight: 600;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
- 
-    .overlay:hover {
-        opacity: 1;
-    }
-
 .section-spacing {
     margin-block: 8rem; /* Adiciona espaçamento vertical */
 }
 
 /* Modal container */
-.modal {
+.general-overlay {
     display: flex; /* O modal é visível por padrão */
+    align-items: center;
+    justify-content: center;
     position: fixed;
-    z-index: 1000;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    align-items: center;
-    justify-content: center;
+    background-color: var(--color-overlay-dark);
+    backdrop-filter: blur(10px);
+    z-index: 1049;
+    transition: opacity 0.3s ease;
 }
 
     .modal.hidden {

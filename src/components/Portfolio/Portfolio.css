@@ -114,22 +114,36 @@
     }
 
 /* Sobreposição */
-.overlay {
+.portfolio-overlay {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     padding: 10px;
-    font-size: 1.2rem;
+    background-color: var(--color-card-shadow-hover);
+    color: var(--color-overlay-text);
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Suaviza a exibição */
+    box-sizing: border-box;
+    z-index: 10; /* Certifica que o overlay está acima de outros elementos */
 }
+
+    .portfolio-overlay:hover,
+    .portfolio-overlay:focus-within { /* Adiciona suporte a foco para acessibilidade */
+        opacity: 1;
+    }
 
 .no-interaction {
     pointer-events: none; /* Desabilita cliques */
 }
 
-    .no-interaction .modal,
+    .no-interaction .general-overlay,
     .no-interaction .menu-sidebar {
         pointer-events: all; /* Permite interação apenas no modal ou no menu */
     }
@@ -160,5 +174,13 @@
     .skeleton-card {
         width: calc(100% - 30px); /* Uma coluna no Skeleton para telas menores */
         height: 250px;
+    }
+}
+
+/* Suporte para dispositivos de toque */
+@media (hover: none) {
+    .portfolio-overlay {
+        opacity: 1; /* Fallback para dispositivos sem suporte a hover */
+        visibility: visible;
     }
 }

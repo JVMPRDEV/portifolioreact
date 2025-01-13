@@ -119,7 +119,7 @@ const Sobre = () => {
 
                 {/* Modal */}
                 {isModalOpen && selectedImage && (
-                    <div className="modal" onClick={closeModal}>
+                    <div className="general-overlay" onClick={closeModal}>
                         <img
                             src={selectedImage}
                             alt="Foto do membro da equipe"

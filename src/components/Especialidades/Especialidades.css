@@ -95,7 +95,7 @@
 .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
-    background-color: var(--color-overlay-text) !important;
+    background-color: var(--color-card-bg) !important;
     border: 2px solid var(--color-highlight);
     border-radius: 50%;
     opacity: 1;

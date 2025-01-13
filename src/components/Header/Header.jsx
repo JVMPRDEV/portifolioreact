@@ -91,9 +91,9 @@ const Header = () => {
         ));
 
     return (
-        <header>
+        <header className={isMenuOpen ? "menu-open" : ""}>
             {/* Overlay */}
-            {isMenuOpen && <div className="overlay" onClick={() => setIsMenuOpen(false)} />}
+            {isMenuOpen && <div className="general-overlay" onClick={() => setIsMenuOpen(false)} />}
 
             <div className="interface">
                 {/* Sidebar Menu */}
@@ -112,17 +112,18 @@ const Header = () => {
                                     <a
                                         href="#Inicio"
                                         aria-label="Ir para o início"
-                                        onClick={() => setIsMenuOpen(false)} // Fecha o menu lateral ao clicar
+                                        onClick={() => setIsMenuOpen(false)}
                                     >
                                         <img src={logo} alt="Logo da empresa" />
                                     </a>
                                 </div>
                             </div>
-
                             <nav className="menu-nav">
                                 <ul>{renderMenuLinks()}</ul>
                             </nav>
-                            <footer className="menu-footer">© 2025 Todos os direitos reservados.</footer>
+                            <div className="menu-footer">
+                                © 2025 Todos os direitos reservados.
+                            </div>
                         </CollapsibleContent>
 
                         <CollapsibleTrigger asChild>
@@ -190,6 +191,7 @@ const Header = () => {
             </div>
         </header>
     );
+
 };
 
 export default Header;

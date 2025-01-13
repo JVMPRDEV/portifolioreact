@@ -26,18 +26,6 @@ header {
             pointer-events: none;
         }
 
-/* OVERLAY */
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1049;
-    transition: opacity 0.3s ease;
-}
-
 /* LOGO */
 .logo {
     display: flex;
@@ -142,7 +130,7 @@ header {
     top: 0;
     left: 0;
     height: 100vh;
-    width: 280px; /* Tamanho adequado para legibilidade */
+    width: 300px;
     background-color: var(--color-header-bg);
     box-shadow: 4px 0 12px rgba(0, 0, 0, 0.2); /* Sombra suave */
     transform: translateX(-100%);
@@ -234,7 +222,7 @@ header {
             border-radius: 8px; /* Bordas suaves */
             text-decoration: none;
             background-color: transparent;
-            transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+            transition: background-color 0.3s ease, color 0.0s ease, transform 0.2s ease;
         }
 
             .menu-nav ul li a:hover,
@@ -352,10 +340,6 @@ header {
         display: none;
     }
 
-    .menu-sidebar {
-        width: 80%; /* Usa maior parte da largura em telas pequenas */
-    }
-
     .menu-nav ul li a {
         font-size: 1.1rem; /* Ajusta tamanho da fonte */
         padding: 0.7rem 0.8rem;
@@ -390,3 +374,4 @@ header {
         display: none;
     }
 }
+
