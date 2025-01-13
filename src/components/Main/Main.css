@@ -55,6 +55,7 @@
 /* Botão de contato */
 .btn-contato {
     display: flex;
+    justify-content: flex-start; /* Alinhamento padrão */
 }
 
     .btn-contato button {
@@ -145,5 +146,9 @@
     .section--left {
         padding: 0;
         text-align: center; /* Centraliza o texto */
+    }
+
+    .btn-contato {
+        justify-content: center; /* Centraliza o botão */
     }
 }
