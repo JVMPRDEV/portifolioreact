@@ -7,17 +7,6 @@
     gap: 4rem;
 }
 
-/* Animações reutilizáveis */
-@keyframes floatAnimation {
-    0% {
-        top: 0;
-    }
-
-    100% {
-        top: 30px;
-    }
-}
-
 @media screen and (max-width: 1020px) {
     .flex-container {
         flex-direction: column-reverse;

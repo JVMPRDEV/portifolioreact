@@ -11,14 +11,14 @@ const PrincipalContent = ({ isLoading }) => {
                 <div className="landing-intro__left">
                     {isLoading ? (
                         <>
-                            <Skeleton className="landing-intro__skeleton-title" aria-label="Carregando título" />
+                            <Skeleton className="landing-intro__skeleton-title skeleton-animation" aria-label="Carregando título" />
                             <Skeleton
                                 count={3}
-                                className="landing-intro__skeleton-description"
+                                className="landing-intro__skeleton-description skeleton-animation"
                                 aria-label="Carregando descrição"
                             />
                             <Skeleton
-                                className="landing-intro__skeleton-button"
+                                className="landing-intro__skeleton-button skeleton-animation"
                                 aria-label="Carregando botão"
                             />
                         </>
@@ -46,7 +46,7 @@ const PrincipalContent = ({ isLoading }) => {
                 <div className="landing-intro__right">
                     {isLoading ? (
                         <Skeleton
-                            className="landing-intro__skeleton-hexagon"
+                            className="landing-intro__skeleton-hexagon skeleton-animation"
                             aria-label="Carregando imagem"
                         />
                     ) : (

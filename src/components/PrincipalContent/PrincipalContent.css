@@ -78,13 +78,6 @@
 	animation: floatAnimation 2s ease-in-out infinite alternate, skeletonLoading 1.5s infinite ease-in-out;
 }
 
-.landing-intro__skeleton-title,
-.landing-intro__skeleton-description,
-.landing-intro__skeleton-button {
-	background-color: var(--color-card-bg); /* Cor de carregamento */
-	animation: skeletonLoading 1.5s infinite ease-in-out; /* Efeito de carregamento */
-}
-
 .landing-intro__skeleton-title {
 	width: 60%;
 	height: 40px;
@@ -114,21 +107,6 @@
 
 	100% {
 		transform: translateY(15px);
-	}
-}
-
-/* Animação de carregamento */
-@keyframes skeletonLoading {
-	0% {
-		opacity: 1;
-	}
-
-	50% {
-		opacity: 0.4;
-	}
-
-	100% {
-		opacity: 1;
 	}
 }
 

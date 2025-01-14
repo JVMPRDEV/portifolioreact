@@ -109,7 +109,7 @@ const Header = () => {
                 {isLoading && (
                     <div className="sidebar-menu">
                         <Skeleton
-                            className="header-skeleton-left"
+                            className="header-skeleton-left skeleton-animation"
                             aria-label="Carregando alternador de tema"
                         />
                     </div>
@@ -160,7 +160,7 @@ const Header = () => {
                             height={50}
                             width={150}
                             borderRadius={10}
-                            className="header-skeleton-center" 
+                            className="header-skeleton-center skeleton-animation" 
                             aria-label="Carregando logo"
                         />
                     ) : (
@@ -182,7 +182,7 @@ const Header = () => {
                             height={40}
                             width={40}
                             borderRadius="50%"
-                            className="header-skeleton-right"
+                            className="header-skeleton-right skeleton-animation"
                             aria-label="Carregando alternador de tema"
                         />
                     ) : (

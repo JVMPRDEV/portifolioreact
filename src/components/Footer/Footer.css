@@ -74,58 +74,23 @@ footer {
                 transition: color 0.5s ease;
             }
 
-/* Skeleton Loader */
-.footer-skeleton-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding-inline: 1rem;
-    gap: 1.5rem;
-}
-
-.skeleton {
+.skeleton-animation {
     background: linear-gradient( 90deg, var(--color-skeleton-bg) 25%, var(--color-skeleton-highlight) 50%, var(--color-skeleton-bg) 75% );
-    background-size: 200% 100%;
-    border-radius: 8px;
-    animation: shimmer 1.5s infinite;
+    animation: skeletonLoading 1.5s infinite;
 }
 
-/* Skeleton para logo */
-.skeleton-logo {
-    width: 100px;
-    height: 50px;
-    border-radius: 5px;
-}
-
-/* Skeleton para texto */
-.skeleton-line {
-    width: 200px;
-    height: 1rem;
-}
-
-/* Skeleton para grupo de redes sociais */
-.skeleton-social-group {
-    display: flex;
-    gap: 1rem;
-}
-
-/* Skeleton círculo para ícones sociais */
-.skeleton-circle {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-}
-
-/* Efeito de brilho do skeleton */
-@keyframes shimmer {
+/* Animação de carregamento */
+@keyframes skeletonLoading {
     0% {
-        background-position: -200% 0;
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
     }
 
     100% {
-        background-position: 200% 0;
+        opacity: 1;
     }
 }
 

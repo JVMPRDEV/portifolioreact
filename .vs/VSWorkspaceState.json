@@ -2,15 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\components",
-    "\\src\\components\\Footer",
-    "\\src\\components\\Formulario",
-    "\\src\\components\\PrincipalContent",
-    "\\src\\components\\ThemeSwitcher",
-    "\\src\\components\\Tutorial",
-    "\\src\\context",
-    "\\src\\styles"
+    "\\src\\components"
   ],
-  "SelectedNode": "\\src\\components\\PrincipalContent\\PrincipalContent.css",
+  "SelectedNode": "\\src\\components\\Header\\Header.jsx",
   "PreviewInSolutionExplorer": false
 }

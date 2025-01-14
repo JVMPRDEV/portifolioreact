@@ -22,6 +22,7 @@ const Footer = () => {
                             height={50}
                             width={100}
                             borderRadius={10}
+                            className="skeleton-animation"
                             aria-label="Carregando logo"
                         />
                     ) : (
@@ -35,6 +36,7 @@ const Footer = () => {
                         <Skeleton
                             height={20}
                             width={200}
+                            className="skeleton-animation"
                             aria-label="Carregando direitos reservados"
                         />
                     ) : (
@@ -50,18 +52,21 @@ const Footer = () => {
                                 circle
                                 height={35}
                                 width={35}
+                                className="skeleton-animation"
                                 aria-label="Carregando ícone do Instagram"
                             />
                             <Skeleton
                                 circle
                                 height={35}
                                 width={35}
+                                className="skeleton-animation"
                                 aria-label="Carregando ícone do Twitter"
                             />
                             <Skeleton
                                 circle
                                 height={35}
                                 width={35}
+                                className="skeleton-animation"
                                 aria-label="Carregando ícone do WhatsApp"
                             />
                         </>

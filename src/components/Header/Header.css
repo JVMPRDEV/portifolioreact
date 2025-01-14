@@ -269,13 +269,6 @@ header {
 }
 
 /* Skeletons */
-.header-skeleton-left,
-.header-skeleton-center,
-.header-skeleton-right {
-    background-color: var(--color-skeleton-bg);
-    animation: skeletonLoading 1.5s infinite ease-in-out; /* Aplica o efeito de carregamento */
-}
-
 /* Menu Icon (Esquerda) */
 .header-skeleton-left {
     width: 100px;
@@ -289,21 +282,6 @@ header {
     flex-grow: 1;
     justify-content: center;
     align-items: center;
-}
-
-/* Animação de carregamento */
-@keyframes skeletonLoading {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0.4;
-    }
-
-    100% {
-        opacity: 1;
-    }
 }
 
 /* RESPONSIVIDADE */

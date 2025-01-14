@@ -124,3 +124,22 @@ html {
         color: var(--color-highlight);
     }
 
+.skeleton-animation {
+    background: linear-gradient( 90deg, var(--color-skeleton-bg) 25%, var(--color-skeleton-highlight) 50%, var(--color-skeleton-bg) 75% );
+    animation: skeletonLoading 1.5s infinite;
+}
+
+/* Animação de carregamento */
+@keyframes skeletonLoading {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
