@@ -3,12 +3,56 @@
   "WorkspaceRootPath": "C:\\workspace\\portifolioreact\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\components\\Header\\Header.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Header\\Header.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\components\\Formulario\\Formulario.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Formulario\\Formulario.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\components\\Header\\Header.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Header\\Header.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\components\\Header\\Header.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Header\\Header.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\styles\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\styles\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\components\\Portfolio\\Portfolio.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Portfolio\\Portfolio.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\components\\Portfolio\\Portfolio.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Portfolio\\Portfolio.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\components\\PrincipalContent\\PrincipalContent.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\PrincipalContent\\PrincipalContent.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\components\\PrincipalContent\\PrincipalContent.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\PrincipalContent\\PrincipalContent.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\components\\Main\\Main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Main\\Main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\components\\Footer\\Footer.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Footer\\Footer.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\components\\Footer\\Footer.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Footer\\Footer.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\portifolioreact\\src\\components\\Main\\Main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Main\\Main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +62,68 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Formulario.jsx",
+              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\components\\Formulario\\Formulario.jsx",
+              "RelativeDocumentMoniker": "src\\components\\Formulario\\Formulario.jsx",
+              "ToolTip": "C:\\workspace\\portifolioreact\\src\\components\\Formulario\\Formulario.jsx",
+              "RelativeToolTip": "src\\components\\Formulario\\Formulario.jsx",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAADEAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-14T21:54:03.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Portfolio.css",
+              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\components\\Portfolio\\Portfolio.css",
+              "RelativeDocumentMoniker": "src\\components\\Portfolio\\Portfolio.css",
+              "ToolTip": "C:\\workspace\\portifolioreact\\src\\components\\Portfolio\\Portfolio.css",
+              "RelativeToolTip": "src\\components\\Portfolio\\Portfolio.css",
+              "ViewState": "AQIAAIcAAAAAAAAAAIAwwIsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-14T20:42:51.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Portfolio.jsx",
+              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\components\\Portfolio\\Portfolio.jsx",
+              "RelativeDocumentMoniker": "src\\components\\Portfolio\\Portfolio.jsx",
+              "ToolTip": "C:\\workspace\\portifolioreact\\src\\components\\Portfolio\\Portfolio.jsx",
+              "RelativeToolTip": "src\\components\\Portfolio\\Portfolio.jsx",
+              "ViewState": "AQIAAIkAAAAAAAAAAAAqwLkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-14T20:42:23.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Header.css",
+              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\components\\Header\\Header.css",
+              "RelativeDocumentMoniker": "src\\components\\Header\\Header.css",
+              "ToolTip": "C:\\workspace\\portifolioreact\\src\\components\\Header\\Header.css",
+              "RelativeToolTip": "src\\components\\Header\\Header.css",
+              "ViewState": "AQIAAMoAAAAAAAAAAAAgwNQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-14T16:48:23.111Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -28,31 +132,114 @@
               "RelativeDocumentMoniker": "src\\components\\Header\\Header.jsx",
               "ToolTip": "C:\\workspace\\portifolioreact\\src\\components\\Header\\Header.jsx",
               "RelativeToolTip": "src\\components\\Header\\Header.jsx",
-              "ViewState": "AQIAAFYAAAAAAAAAAAAAAGsAAAAPAAAA",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAawF4AAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-01-14T13:17:01.871Z",
+              "WhenOpened": "2025-01-14T16:44:44.068Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Header.css",
-              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\components\\Header\\Header.css",
-              "RelativeDocumentMoniker": "src\\components\\Header\\Header.css",
-              "ToolTip": "C:\\workspace\\portifolioreact\\src\\components\\Header\\Header.css",
-              "RelativeToolTip": "src\\components\\Header\\Header.css",
-              "ViewState": "AQIAAPEAAAAAAAAAAAAwwA0BAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-14T13:15:51.462Z",
+              "DocumentIndex": 6,
+              "Title": "PrincipalContent.jsx",
+              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\components\\PrincipalContent\\PrincipalContent.jsx",
+              "RelativeDocumentMoniker": "src\\components\\PrincipalContent\\PrincipalContent.jsx",
+              "ToolTip": "C:\\workspace\\portifolioreact\\src\\components\\PrincipalContent\\PrincipalContent.jsx",
+              "RelativeToolTip": "src\\components\\PrincipalContent\\PrincipalContent.jsx",
+              "ViewState": "AQIAABcAAAAAAAAAAAAawDQAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-14T16:29:55.549Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PrincipalContent.css",
+              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\components\\PrincipalContent\\PrincipalContent.css",
+              "RelativeDocumentMoniker": "src\\components\\PrincipalContent\\PrincipalContent.css",
+              "ToolTip": "C:\\workspace\\portifolioreact\\src\\components\\PrincipalContent\\PrincipalContent.css",
+              "RelativeToolTip": "src\\components\\PrincipalContent\\PrincipalContent.css",
+              "ViewState": "AQIAADQAAAAAAAAAAAAgwE4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-14T16:28:30.346Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Footer.css",
+              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\components\\Footer\\Footer.css",
+              "RelativeDocumentMoniker": "src\\components\\Footer\\Footer.css",
+              "ToolTip": "C:\\workspace\\portifolioreact\\src\\components\\Footer\\Footer.css",
+              "RelativeToolTip": "src\\components\\Footer\\Footer.css",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAEsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-14T16:25:41.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "App.js",
+              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\App.js",
+              "RelativeDocumentMoniker": "src\\App.js",
+              "ToolTip": "C:\\workspace\\portifolioreact\\src\\App.js",
+              "RelativeToolTip": "src\\App.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-14T16:23:38.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Main.jsx",
+              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\components\\Main\\Main.jsx",
+              "RelativeDocumentMoniker": "src\\components\\Main\\Main.jsx",
+              "ToolTip": "C:\\workspace\\portifolioreact\\src\\components\\Main\\Main.jsx",
+              "RelativeToolTip": "src\\components\\Main\\Main.jsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-14T16:23:21.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Main.css",
+              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\components\\Main\\Main.css",
+              "RelativeDocumentMoniker": "src\\components\\Main\\Main.css",
+              "ToolTip": "C:\\workspace\\portifolioreact\\src\\components\\Main\\Main.css",
+              "RelativeToolTip": "src\\components\\Main\\Main.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-14T16:23:20.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\styles\\style.css",
+              "RelativeDocumentMoniker": "src\\styles\\style.css",
+              "ToolTip": "C:\\workspace\\portifolioreact\\src\\styles\\style.css",
+              "RelativeToolTip": "src\\styles\\style.css",
+              "ViewState": "AQIAACYAAAAAAAAAAAAwwEUAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-14T16:04:20.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Footer.jsx",
+              "DocumentMoniker": "C:\\workspace\\portifolioreact\\src\\components\\Footer\\Footer.jsx",
+              "RelativeDocumentMoniker": "src\\components\\Footer\\Footer.jsx",
+              "ToolTip": "C:\\workspace\\portifolioreact\\src\\components\\Footer\\Footer.jsx",
+              "RelativeToolTip": "src\\components\\Footer\\Footer.jsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-01-14T15:59:40.013Z",
+              "EditorCaption": ""
             }
           ]
         }

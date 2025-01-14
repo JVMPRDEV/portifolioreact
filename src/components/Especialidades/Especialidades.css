@@ -70,15 +70,6 @@
     margin-bottom: 1rem;
 }
 
-/* Swiper Container */
-.swiper-container {
-    width: 90%;
-    max-width: 1280px;
-    margin: auto;
-    padding: 2rem 0;
-    overflow: hidden;
-    position: relative;
-}
 
 /* Swiper Pagination */
 .swiper-pagination {

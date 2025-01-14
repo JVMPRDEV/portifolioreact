@@ -89,7 +89,7 @@ const Especialidades = () => {
                     pagination={{
                         clickable: true,
                         renderBullet: (index, className) => (
-                            `<span class="${className}" aria-label="Ir para slide ${index + 1}"></span>`
+                            `<span class="${className}" role="button" tabindex="0" aria-current="${index === 0 ? 'true' : 'false'}" aria-label="Slide ${index + 1}"></span>`
                         ),
                     }}
                     observer={true}
@@ -108,7 +108,7 @@ const Especialidades = () => {
                             className="swiper-slide"
                             role="group"
                             aria-roledescription="slide"
-                            aria-label={`${index + 1} de ${especialidades.length}`}
+                            aria-label={`Slide ${index + 1} de ${especialidades.length}`}
                         >
                             <div className="especialidades--box" aria-labelledby={`especialidade-${index}-title`}>
                                 <FontAwesomeIcon
