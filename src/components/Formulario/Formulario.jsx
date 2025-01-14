@@ -3,6 +3,7 @@ import { useForm, Controller } from "react-hook-form";
 import * as Yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import InputMask from "react-input-mask";
+import emailjs from "emailjs-com";
 import "./Formulario.css";
 
 const validationSchema = Yup.object({
@@ -18,6 +19,7 @@ const validationSchema = Yup.object({
 
 const Formulario = () => {
     const [isLoading, setIsLoading] = useState(true);
+    const [formStatus, setFormStatus] = useState(null);
 
     const {
         handleSubmit,
@@ -29,10 +31,27 @@ const Formulario = () => {
         resolver: yupResolver(validationSchema),
     });
 
-    const onSubmit = (data) => {
-        console.log("Formulário enviado com sucesso:", data);
-        alert("Mensagem enviada com sucesso!");
-        reset();
+    const onSubmit = async (data) => {
+        try {
+            await emailjs.send(
+                "service_mjy7u8d", // Substitua pelo seu service_id
+                "template_pl2tfoj", // Substitua pelo seu template_id
+                {
+                    from_name: data.name,
+                    from_email: data.email,
+                    cellphone: data.cellphone,
+                    message: data.message,
+                },
+                "dSOu7Mj0reuzXZcuH" // Substitua pelo seu user_id
+            );
+            setFormStatus("success");
+            alert("Mensagem enviada com sucesso!");
+            reset();
+        } catch (error) {
+            console.error("Erro ao enviar o e-mail:", error);
+            setFormStatus("error");
+            alert("Ocorreu um erro ao enviar sua mensagem. Tente novamente.");
+        }
     };
 
     useEffect(() => {

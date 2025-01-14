@@ -3,9 +3,14 @@
     "",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\Header",
-    "\\src\\styles"
+    "\\src\\components\\Main",
+    "\\src\\components\\Portfolio",
+    "\\src\\components\\PrincipalContent",
+    "\\src\\components\\Sobre",
+    "\\src\\components\\ThemeSwitcher",
+    "\\src\\components\\Tutorial",
+    "\\src\\context"
   ],
-  "SelectedNode": "\\src\\components\\Header\\Header.jsx",
+  "SelectedNode": "\\readme.md",
   "PreviewInSolutionExplorer": false
 }

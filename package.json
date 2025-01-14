@@ -16,6 +16,7 @@
     "@storybook/addons": "6.5",
     "@storybook/react": "6.5",
     "cra-template-pwa": "2.0.0",
+    "emailjs-com": "^3.2.0",
     "isotope-layout": "^3.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
