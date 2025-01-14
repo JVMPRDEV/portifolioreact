@@ -168,13 +168,13 @@
 	.landing-intro__right img {
 		margin: auto;
 	}
+
+	.landing-intro__button {
+		margin-top: 1rem;
+	}
 }
 
 @media screen and (max-width: 450px) {
-	.landing-intro {
-		padding: 2rem 8%;
-	}
-
 	.landing-intro__content {
 		gap: 1rem; /* Reduz o espaçamento em resoluções muito pequenas */
 	}

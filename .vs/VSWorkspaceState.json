@@ -3,14 +3,14 @@
     "",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\Main",
-    "\\src\\components\\Portfolio",
-    "\\src\\components\\PrincipalContent",
-    "\\src\\components\\Sobre",
+    "\\src\\components\\Especialidades",
+    "\\src\\components\\Footer",
+    "\\src\\components\\Formulario",
     "\\src\\components\\ThemeSwitcher",
     "\\src\\components\\Tutorial",
-    "\\src\\context"
+    "\\src\\context",
+    "\\src\\styles"
   ],
-  "SelectedNode": "\\readme.md",
+  "SelectedNode": "\\src\\components\\PrincipalContent\\PrincipalContent.css",
   "PreviewInSolutionExplorer": false
 }

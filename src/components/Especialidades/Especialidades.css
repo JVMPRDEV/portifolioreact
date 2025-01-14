@@ -184,6 +184,10 @@
     .skeleton-especialidades-description {
         font-size: 0.8rem;
     }
+
+    .especialidades--box {
+        margin: 2rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
