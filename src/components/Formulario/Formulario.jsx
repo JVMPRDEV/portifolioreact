@@ -19,7 +19,6 @@ const validationSchema = Yup.object({
 
 const Formulario = () => {
     const [isLoading, setIsLoading] = useState(true);
-    const [formStatus, setFormStatus] = useState(null);
 
     const {
         handleSubmit,
@@ -37,19 +36,17 @@ const Formulario = () => {
                 "service_mjy7u8d", // Substitua pelo seu service_id
                 "template_pl2tfoj", // Substitua pelo seu template_id
                 {
-                    from_name: data.name,
-                    from_email: data.email,
-                    cellphone: data.cellphone,
-                    message: data.message,
+                    from_name: data.name,      // Nome do remetente
+                    from_email: data.email,   // E-mail do remetente
+                    cellphone: data.cellphone, // Celular do remetente
+                    message: data.message,    // Mensagem enviada
                 },
                 "dSOu7Mj0reuzXZcuH" // Substitua pelo seu user_id
             );
-            setFormStatus("success");
             alert("Mensagem enviada com sucesso!");
-            reset();
+            reset(); // Reseta os campos do formulário
         } catch (error) {
             console.error("Erro ao enviar o e-mail:", error);
-            setFormStatus("error");
             alert("Ocorreu um erro ao enviar sua mensagem. Tente novamente.");
         }
     };
