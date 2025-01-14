@@ -3,13 +3,14 @@
     "",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\Especialidades",
     "\\src\\components\\Footer",
     "\\src\\components\\Formulario",
+    "\\src\\components\\PrincipalContent",
     "\\src\\components\\ThemeSwitcher",
     "\\src\\components\\Tutorial",
     "\\src\\context",
     "\\src\\styles"
   ],
+  "SelectedNode": "\\src\\components\\PrincipalContent\\PrincipalContent.css",
   "PreviewInSolutionExplorer": false
 }

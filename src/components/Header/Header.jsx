@@ -105,6 +105,16 @@ const Header = () => {
             )}
 
             <div className="interface">
+               
+                {isLoading && (
+                    <div className="sidebar-menu">
+                        <Skeleton
+                            className="header-skeleton-left"
+                            aria-label="Carregando alternador de tema"
+                        />
+                    </div>
+                )}
+
                 {!isLoading && (
                     <Collapsible open={isMenuOpen} onOpenChange={setIsMenuOpen}>
                         <CollapsibleContent className="menu-sidebar" ref={sidebarRef} role="navigation" aria-label="Menu lateral">
@@ -150,7 +160,7 @@ const Header = () => {
                             height={50}
                             width={150}
                             borderRadius={10}
-                            className="header-skeleton-logo"
+                            className="header-skeleton-center" 
                             aria-label="Carregando logo"
                         />
                     ) : (
@@ -172,7 +182,7 @@ const Header = () => {
                             height={40}
                             width={40}
                             borderRadius="50%"
-                            className="header-skeleton-theme-switcher"
+                            className="header-skeleton-right"
                             aria-label="Carregando alternador de tema"
                         />
                     ) : (
