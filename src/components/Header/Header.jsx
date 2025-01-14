@@ -30,30 +30,31 @@ const Header = () => {
     const [theme, setTheme] = useState(() => localStorage.getItem("theme") || "dark");
     const [isLoading, setIsLoading] = useState(true);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [activeSection, setActiveSection] = useState(""); // Armazena a seção ativa
+    const [activeSection, setActiveSection] = useState("Inicio"); // Começa com "Inicio"
     const sidebarRef = useRef(null);
 
     useEffect(() => {
         const handleScroll = () => {
-            const sections = document.querySelectorAll("section[id]");
-            let currentSection = "";
+            const sections = document.querySelectorAll("section[id]"); // Identifica todas as seções com `id`
+            let currentSection = "Inicio"; // Valor padrão
 
             sections.forEach((section) => {
                 const rect = section.getBoundingClientRect();
-                if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
+                // Considera a seção atual visível no meio da tela
+                if (rect.top <= window.innerHeight / 2 && rect.bottom > window.innerHeight / 2) {
                     currentSection = section.id;
                 }
             });
 
-            setActiveSection(currentSection);
+            setActiveSection(currentSection); // Atualiza a seção ativa
         };
 
-        window.addEventListener("scroll", handleScroll);
-
+        window.addEventListener("scroll", handleScroll); // Adiciona o listener de scroll
         return () => {
-            window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener("scroll", handleScroll); // Remove o listener ao desmontar
         };
     }, []);
+
 
     useEffect(() => {
         const rootElement = document.documentElement;
@@ -97,11 +98,11 @@ const Header = () => {
         return itemsWithContact.map((item) => (
             <li
                 key={item.id}
-                className={activeSection === item.id ? "menu-item active" : "menu-item"}
+                className={activeSection === item.id ? "active" : ""} // Adiciona a classe `active`
             >
                 <a
                     href={`#${item.id}`}
-                    onClick={toggleMenu}
+                    onClick={() => setActiveSection(item.id)} // Garante que o clique também atualize o estado
                     aria-label={`Ir para ${item.name}`}
                 >
                     <span className="menu-icon">{item.icon}</span> {item.name}
