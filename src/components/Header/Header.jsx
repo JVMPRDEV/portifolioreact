@@ -30,7 +30,30 @@ const Header = () => {
     const [theme, setTheme] = useState(() => localStorage.getItem("theme") || "dark");
     const [isLoading, setIsLoading] = useState(true);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [activeSection, setActiveSection] = useState(""); // Armazena a seção ativa
     const sidebarRef = useRef(null);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const sections = document.querySelectorAll("section[id]");
+            let currentSection = "";
+
+            sections.forEach((section) => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
+                    currentSection = section.id;
+                }
+            });
+
+            setActiveSection(currentSection);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     useEffect(() => {
         const rootElement = document.documentElement;
@@ -72,8 +95,15 @@ const Header = () => {
         ];
 
         return itemsWithContact.map((item) => (
-            <li key={item.id}>
-                <a href={`#${item.id}`} onClick={toggleMenu} aria-label={`Ir para ${item.name}`}>
+            <li
+                key={item.id}
+                className={activeSection === item.id ? "menu-item active" : "menu-item"}
+            >
+                <a
+                    href={`#${item.id}`}
+                    onClick={toggleMenu}
+                    aria-label={`Ir para ${item.name}`}
+                >
                     <span className="menu-icon">{item.icon}</span> {item.name}
                 </a>
             </li>

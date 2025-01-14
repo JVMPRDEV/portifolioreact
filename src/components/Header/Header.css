@@ -226,11 +226,13 @@ header {
         }
 
             .menu-nav ul li a:hover,
-            .menu-nav ul li a:focus {
+            .menu-nav ul li a:focus,
+            .menu-nav ul li.active a {
                 background-color: var(--color-highlight);
                 color: var(--color-text-dark);
                 transform: scale(1.05); /* Leve aumento para indicar ação */
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Destaque com sombra */
+                transition: all 0.3s ease; /* Animação suave para hover e foco */
             }
 
 /* Rodapé */
