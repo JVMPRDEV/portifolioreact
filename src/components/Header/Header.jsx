@@ -98,11 +98,14 @@ const Header = () => {
         return itemsWithContact.map((item) => (
             <li
                 key={item.id}
-                className={activeSection === item.id ? "active" : ""} // Adiciona a classe `active`
+                className={activeSection === item.id ? "active" : ""} // Mantém a lógica de seção ativa
             >
                 <a
                     href={`#${item.id}`}
-                    onClick={() => setActiveSection(item.id)} // Garante que o clique também atualize o estado
+                    onClick={() => {
+                        setActiveSection(item.id); // Atualiza a seção ativa
+                        setIsMenuOpen(false); // Fecha o menu
+                    }}
                     aria-label={`Ir para ${item.name}`}
                 >
                     <span className="menu-icon">{item.icon}</span> {item.name}
