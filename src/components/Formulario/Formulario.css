@@ -21,8 +21,7 @@
 
 /* Título */
 .title--form {
-    margin-top: 0;
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
 }
 
 /* Campos de entrada */

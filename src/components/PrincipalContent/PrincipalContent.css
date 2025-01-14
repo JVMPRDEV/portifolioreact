@@ -134,10 +134,6 @@
 
 /* Responsividade */
 @media screen and (max-width: 1020px) {
-	.landing-intro {
-		padding: 2rem 8%;
-	}
-
 	.landing-intro__content {
 		flex-direction: column-reverse;
 		gap: 1.5rem;

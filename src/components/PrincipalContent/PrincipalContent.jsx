@@ -6,7 +6,7 @@ import "./PrincipalContent.css";
 
 const PrincipalContent = ({ isLoading }) => {
     return (
-        <section className="landing-intro" id="Inicio" aria-label="Introdução da página">
+        <section className="landing-intro section-spacing" id="Inicio" aria-label="Introdução da página">
             <div className="landing-intro__content">
                 <div className="landing-intro__left">
                     {isLoading ? (

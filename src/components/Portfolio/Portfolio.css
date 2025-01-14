@@ -1,6 +1,5 @@
 /* Geral */
 .portfolio {
-    padding: 0 3rem;
     max-width: 1280px;
     margin: auto;
 }
@@ -92,6 +91,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
+    margin: 0 3rem;
 }
 
 /* Imagem do portfólio */
