@@ -2,9 +2,9 @@ import React from "react";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import pessoaImg from "../../assets/img/pessoa.png";
-import "./LandingPageIntro.css";
+import "./PrincipalContent.css";
 
-const LandingPageIntro = ({ isLoading }) => {
+const PrincipalContent = ({ isLoading }) => {
     return (
         <section className="landing-intro" id="Inicio" aria-label="Introdução da página">
             <div className="landing-intro__content">
@@ -62,4 +62,4 @@ const LandingPageIntro = ({ isLoading }) => {
     );
 };
 
-export default LandingPageIntro;
+export default PrincipalContent;

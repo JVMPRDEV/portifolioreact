@@ -4,7 +4,7 @@ import Especialidades from "../Especialidades/Especialidades";
 import Sobre from "../Sobre/Sobre";
 import Portfolio from "../Portfolio/Portfolio";
 import Formulario from "../Formulario/Formulario";
-import LandingPageIntro from "../LandingPageIntro/LandingPageIntro";
+import PrincipalContent from "../PrincipalContent/PrincipalContent";
 
 const Main = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -16,7 +16,7 @@ const Main = () => {
 
     return (
         <main role="main" aria-label="Conteúdo principal">
-            <LandingPageIntro isLoading={isLoading} />
+            <PrincipalContent isLoading={isLoading} />
             <section aria-labelledby="especialidades-title">
                 <Especialidades />
             </section>
