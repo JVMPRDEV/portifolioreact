@@ -195,7 +195,10 @@
 	.landing-intro__skeleton-title,
 	.landing-intro__skeleton-description,
 	.landing-intro__skeleton-button {
-		width: 90%; /* Expande os placeholders para preencher mais espaço */
 		margin: 0.8rem auto;
+	}
+
+	.landing-intro__button {
+		margin-top: 1rem;
 	}
 }
