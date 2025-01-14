@@ -1,6 +1,6 @@
 ﻿# 📂 Portfólio React
 
-Este é um projeto de portfólio desenvolvido em **React**, focado em design responsivo, acessibilidade e experiência do usuário. Ele utiliza tecnologias modernas e práticas de desenvolvimento eficientes para criar uma aplicação dinâmica e interativa.
+Este é um projeto de portfólio desenvolvido em **React**, com foco em design responsivo, acessibilidade, e experiência do usuário. O projeto utiliza ferramentas modernas e práticas avançadas para criar uma aplicação dinâmica e eficiente.
 
 ---
 
@@ -9,37 +9,41 @@ Este é um projeto de portfólio desenvolvido em **React**, focado em design res
 ### **Frontend**
 - **React**: Biblioteca JavaScript para construção de interfaces de usuário.
 - **React DOM**: Renderização de componentes React no DOM.
-- **React Hook Form**: Gerenciamento de formulários com validação eficiente.
-- **Yup**: Validação de esquemas para formulários.
-- **Radix UI**: Componentes acessíveis e personalizáveis.
-- **Tailwind CSS**: Framework CSS utilitário para estilização.
-- **Swiper**: Biblioteca para carrosséis e sliders.
-- **Font Awesome e React Icons**: Conjunto de ícones modernos para interface.
+- **React Hook Form**: Gerenciamento de formulários com validação.
+- **Yup**: Biblioteca de validação de esquemas para formulários.
+- **Radix UI**: Componentes acessíveis como Dialog, Collapsible e NavigationMenu.
+- **Swiper**: Biblioteca para carrosséis e sliders interativos.
+- **Font Awesome**: Ícones modernos para interfaces.
 
-### **Componentização**
-- **Storybook**: Ferramenta para documentação e teste visual de componentes.
-- **React Input Mask**: Máscaras de entrada para formulários.
-- **React Spinners**: Indicadores de carregamento animados.
-- **React Loading Skeleton**: Skeleton loaders para placeholders interativos.
+### **Componentização e Testes**
+- **Storybook**: Documentação e teste visual de componentes isolados.
+- **Chromatic**: Verificação de regressão visual e deploy de histórias.
+- **PropTypes**: Validação de tipos de propriedades para componentes React.
+
+### **Estilização**
+- **Tailwind CSS**: Framework CSS utilitário para estilização rápida.
+- **Tailwind Forms**: Melhoria na estilização de formulários.
+- **Tailwind Typography**: Tipografia para conteúdos ricos.
+- **Autoprefixer**: Compatibilidade de CSS com navegadores.
+- **PostCSS**: Processamento avançado de CSS.
 
 ### **Outras Dependências**
 - **Isotope.js**: Biblioteca para layouts filtráveis.
-- **CRA Template PWA**: Template para Progressive Web Apps.
-
-### **Estilização**
-- **Tailwind CSS Forms e Typography**: Extensões para melhor formatação de formulários e tipografia.
-- **PostCSS e Autoprefixer**: Ferramentas para processamento e compatibilidade de CSS.
+- **React Loading Skeleton**: Skeleton loaders para placeholders interativos.
+- **React Spinners**: Indicadores de carregamento animados.
+- **React Input Mask**: Máscaras de entrada para formulários.
+- **CRA Template PWA**: Template para Progressive Web Apps (PWAs).
 
 ---
 
 ## ✨ Funcionalidades
 
-- **Exibição de Portfólio**: Projetos organizados em um layout dinâmico e interativo.
-- **Formulário de Contato**: Validação com **React Hook Form** e **Yup**.
-- **Design Responsivo**: Compatível com diferentes tamanhos de tela.
+- **Exibição de Portfólio**: Galeria de projetos com layout interativo e filtrável.
+- **Formulário de Contato**: Formulários validados com **React Hook Form** e **Yup**.
+- **Design Responsivo**: Compatível com dispositivos móveis, tablets e desktops.
 - **Skeleton Loaders**: Feedback visual durante carregamentos.
 - **Carrosséis**: Experiência visual aprimorada com o **Swiper**.
-- **Storybook**: Visualização e documentação de componentes isolados.
+- **Storybook**: Visualização e documentação de componentes.
 
 ---
 
@@ -47,21 +51,24 @@ Este é um projeto de portfólio desenvolvido em **React**, focado em design res
 
 ```plaintext
 src/
-├── assets/         # Recursos estáticos como imagens e fontes
+├── assets/         # Recursos estáticos (imagens, ícones)
 ├── components/     # Componentes reutilizáveis
 │   ├── Header/     # Cabeçalho
 │   ├── Footer/     # Rodapé
 │   ├── Portfolio/  # Galeria de projetos
 │   ├── Formulario/ # Formulário de contato
-│   └── Sobre/      # Seção sobre
-├── styles/         # Estilos globais e configurações do Tailwind CSS
+│   ├── Sobre/      # Seção sobre nós
+│   ├── ThemeSwitcher/ # Alternador de tema
+├── context/        # Contextos globais (ex.: ThemeContext)
+├── stories/        # Histórias do Storybook
+├── styles/         # Estilos globais e Tailwind CSS
 ├── .storybook/     # Configurações do Storybook
 └── App.js          # Ponto de entrada principal
 ```
 
 ---
 
-## 🖥️ Pré-requisitos
+## 🔄 Pré-requisitos
 
 - **Node.js**: Versão 18 ou superior.
 - **NPM ou Yarn**: Gerenciador de pacotes.
@@ -107,7 +114,7 @@ src/
 
 ---
 
-## 🧹 Contribuindo
+## 🚩 Contribuindo
 
 1. Faça um fork deste repositório.
 2. Crie uma branch com sua nova feature:
@@ -135,3 +142,4 @@ Este projeto está sob a licença **MIT**. Consulte o arquivo `LICENSE` para mai
 ## 👨‍💻 Autor
 
 Desenvolvido com dedicação por **João Rocha**. 😊
+
