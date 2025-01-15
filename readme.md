@@ -4,6 +4,20 @@ Este é um projeto de portfólio desenvolvido em **React**, com foco em design r
 
 ---
 
+## 🔧 Validação pelo Lighthouse
+
+Os relatórios do Lighthouse comprovam a alta qualidade deste projeto:
+
+- **Acessibilidade**: 100/100
+- **Best Practices**: 100/100
+- **SEO**: 100/100
+- **Performance**: 92/100
+
+A aplicação está disponível online para acesso:
+[Portfólio React](https://portifolioreact-1ibx.vercel.app/)
+
+---
+
 ## 🚀 Tecnologias Utilizadas
 
 ### **Frontend**
@@ -14,11 +28,13 @@ Este é um projeto de portfólio desenvolvido em **React**, com foco em design r
 - **Radix UI**: Componentes acessíveis como Dialog, Collapsible e NavigationMenu.
 - **Swiper**: Biblioteca para carrosséis e sliders interativos.
 - **Font Awesome**: Ícones modernos para interfaces.
+- **EmailJS**: Integração para envio de e-mails diretamente do cliente.
 
 ### **Componentização e Testes**
 - **Storybook**: Documentação e teste visual de componentes isolados.
 - **Chromatic**: Verificação de regressão visual e deploy de histórias.
 - **PropTypes**: Validação de tipos de propriedades para componentes React.
+- **React Helmet**: Gerenciamento de meta tags para SEO.
 
 ### **Estilização**
 - **Tailwind CSS**: Framework CSS utilitário para estilização rápida.
@@ -44,10 +60,11 @@ Este é um projeto de portfólio desenvolvido em **React**, com foco em design r
 - **Skeleton Loaders**: Feedback visual durante carregamentos.
 - **Carrosséis**: Experiência visual aprimorada com o **Swiper**.
 - **Storybook**: Visualização e documentação de componentes.
+- **Envio de E-mails**: Integração com **EmailJS** para contato direto.
 
 ---
 
-## 📂 Estrutura do Projeto
+## 🗋 Estrutura do Projeto
 
 ```plaintext
 src/
@@ -58,7 +75,7 @@ src/
 │   ├── Portfolio/  # Galeria de projetos
 │   ├── Formulario/ # Formulário de contato
 │   ├── Sobre/      # Seção sobre nós
-│   ├── ThemeSwitcher/ # Alternador de tema
+│   └── ThemeSwitcher/ # Alternador de tema
 ├── context/        # Contextos globais (ex.: ThemeContext)
 ├── stories/        # Histórias do Storybook
 ├── styles/         # Estilos globais e Tailwind CSS
@@ -100,7 +117,7 @@ src/
 
 ---
 
-## 📖 Executando o Storybook
+## 🖊️ Executando o Storybook
 
 1. **Inicie o Storybook**:
    ```bash
