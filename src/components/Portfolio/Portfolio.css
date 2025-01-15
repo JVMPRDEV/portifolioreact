@@ -25,9 +25,10 @@
 
         .filters button.active {
             background-color: var(--color-highlight);
-            color: var(--color-text-dark);
+            color: var(--color-dark-highlight-shadow);
             transform: scale(1.1);
             box-shadow: 0 4px 8px var(--color-highlight-shadow);
+            font-weight: 600;
         }
 
         .filters button:hover {

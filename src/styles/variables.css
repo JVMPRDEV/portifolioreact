@@ -8,6 +8,7 @@
     --color-title: #333333; /* Cor do título principal */
     --color-title-highlight: #FFAA33; /* Cor de destaque do título */
     --color-highlight-shadow: rgba(255, 140, 0, 0.6); /* Sombra destacada */
+    --color-dark-highlight-shadow: #121212; /* Sombra destacada */
     --color-modal-background: rgba(255, 255, 255, 0.8); /* Fundo do modal no modo claro */
     /* Botões */
     --color-button-bg: #FFAA33; /* Fundo do botão */
@@ -54,6 +55,7 @@
     --color-title: #f3f3f3; /* Cor do título no modo escuro */
     --color-title-highlight: #FFAA33; /* Cor de destaque do título no modo escuro */
     --color-highlight-shadow: rgba(255, 140, 0, 0.8); /* Sombra destacada no modo escuro */
+    --color-dark-highlight-shadow: #121212; /* Sombra destacada */
     --color-modal-background: rgba(0, 0, 0, 0.8); /* Fundo do modal no modo escuro */
     /* Botões */
     --color-button-bg: #FFAA33; /* Fundo do botão no modo escuro */

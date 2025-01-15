@@ -61,7 +61,7 @@ const Header = () => {
         rootElement.setAttribute("data-theme", theme);
         localStorage.setItem("theme", theme);
 
-        const timeout = setTimeout(() => setIsLoading(false), 1500);
+        const timeout = setTimeout(() => setIsLoading(false), 2000);
         return () => clearTimeout(timeout);
     }, [theme]);
 
