@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet"; // Importar Helmet
 import "./Main.css";
 import Especialidades from "../Especialidades/Especialidades";
 import Sobre from "../Sobre/Sobre";
@@ -16,6 +17,10 @@ const Main = () => {
 
     return (
         <main role="main" aria-label="Conteúdo principal">
+            <Helmet>
+                <meta name="description" content="Explore nossas especialidades, conheça mais sobre nós e veja nosso portfólio." />
+                <title>Conteúdo Principal - Minha Aplicação React</title>
+            </Helmet>
             <PrincipalContent isLoading={isLoading} />
             <section aria-labelledby="especialidades-title">
                 <Especialidades />

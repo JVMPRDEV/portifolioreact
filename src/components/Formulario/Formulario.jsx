@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import { useForm, Controller } from "react-hook-form";
 import * as Yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
-import InputMask from "react-input-mask";
 import emailjs from "emailjs-com";
 import "./Formulario.css";
 
+// Validação com Yup
 const validationSchema = Yup.object({
     name: Yup.string().required("Por favor, informe seu nome completo."),
     email: Yup.string()
@@ -36,19 +36,27 @@ const Formulario = () => {
                 "service_mjy7u8d", // Substitua pelo seu service_id
                 "template_pl2tfoj", // Substitua pelo seu template_id
                 {
-                    from_name: data.name,      // Nome do remetente
-                    from_email: data.email,   // E-mail do remetente
-                    cellphone: data.cellphone, // Celular do remetente
-                    message: data.message,    // Mensagem enviada
+                    from_name: data.name,
+                    from_email: data.email,
+                    cellphone: data.cellphone,
+                    message: data.message,
                 },
                 "dSOu7Mj0reuzXZcuH" // Substitua pelo seu user_id
             );
             alert("Mensagem enviada com sucesso!");
-            reset(); // Reseta os campos do formulário
+            reset();
         } catch (error) {
             console.error("Erro ao enviar o e-mail:", error);
             alert("Ocorreu um erro ao enviar sua mensagem. Tente novamente.");
         }
+    };
+
+    // Função para aplicar a máscara
+    const applyMask = (value) => {
+        return value
+            .replace(/\D/g, "") // Remove todos os caracteres que não são dígitos
+            .replace(/(\d{2})(\d{5})(\d{4})/, "($1) $2-$3") // Aplica a máscara
+            .replace(/(-\d{4})\d+?$/, "$1"); // Impede que mais dígitos sejam inseridos
     };
 
     useEffect(() => {
@@ -106,11 +114,13 @@ const Formulario = () => {
                                 name="cellphone"
                                 control={control}
                                 defaultValue=""
-                                render={({ field }) => (
-                                    <InputMask
-                                        {...field}
+                                render={({ field: { onChange, onBlur, value } }) => (
+                                    <input
                                         id="cellphone"
-                                        mask="(99) 99999-9999"
+                                        type="text"
+                                        value={applyMask(value)}
+                                        onChange={(e) => onChange(applyMask(e.target.value))}
+                                        onBlur={onBlur}
                                         placeholder="Celular com DDD"
                                         className="form-input"
                                         aria-invalid={!!errors.cellphone}
