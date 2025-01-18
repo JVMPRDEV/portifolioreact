@@ -5,6 +5,7 @@ footer {
     padding-block: 1rem;
     background-color: var(--color-background);
     color: var(--color-text);
+    box-shadow: 0 0 10px 1px var(--color-card-shadow);
     font-size: 0.875rem;
     transition: background-color 0.5s ease, color 0.5s ease;
     margin-top: 4rem;
