@@ -46,14 +46,14 @@ const PrincipalContent = ({ isLoading }) => {
                 <div className="landing-intro__right">
                     {isLoading ? (
                         <Skeleton
-                            className="landing-intro__skeleton-hexagon skeleton-animation"
+                            className="landing-intro__skeleton-hexagon principal-image-animation skeleton-animation"
                             aria-label="Carregando imagem"
                         />
                     ) : (
                         <img
                             src={pessoaImg}
                             alt="Ilustração de uma pessoa relacionada aos dados"
-                            className="landing-intro__image"
+                            className="landing-intro__image principal-image-animation"
                         />
                     )}
                 </div>
