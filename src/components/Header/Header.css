@@ -7,7 +7,6 @@ header {
     z-index: 1000;
     padding: 0.5rem 1.5rem;
     background-color: var(--color-header-bg);
-    box-shadow: 0 4px 8px var(--color-box-shadow-footer);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
